@@ -63,6 +63,7 @@ if (!customElements.get('product-info')) {
         fetch(`${this.dataset.url}?variant=${this.currentVariant.value}&section_id=${this.dataset.section}`)
           .then((response) => {
             return response.text();
+            console.log(response)
           })
           .then((responseText) => {
             const html = new DOMParser().parseFromString(responseText, 'text/html');
