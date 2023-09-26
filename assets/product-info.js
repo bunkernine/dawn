@@ -55,7 +55,6 @@ if (!customElements.get('product-info')) {
         this.input.min = min;
         this.input.max = max;
         this.input.value = min;
-        console.log(PUB_SUB_EVENTS.quantityUpdate)
         publish(PUB_SUB_EVENTS.quantityUpdate, undefined);
       }
 
