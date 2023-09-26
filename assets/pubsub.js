@@ -16,8 +16,10 @@ function subscribe(eventName, callback) {
 
 function publish(eventName, data) {
   if (subscribers[eventName]) {
-    console.log(subscribers[eventName])
     subscribers[eventName].forEach((callback) => {
+      console.log({
+        callback, data
+      })
       callback(data);
     });
   }
