@@ -16,7 +16,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach(summary => {
   if (summary.closest('header-drawer, menu-drawer')) return;
   summary.parentElement.addEventListener('keyup', onKeyUpEscape);
 });
-const trapFocusHandlers = {};
+var trapFocusHandlers = {};
 function trapFocus(container, elementToFocus = container) {
   var elements = getFocusableElements(container);
   var first = elements[0];
@@ -58,9 +58,9 @@ try {
   focusVisiblePolyfill();
 }
 function focusVisiblePolyfill() {
-  const navKeys = ['ARROWUP', 'ARROWDOWN', 'ARROWLEFT', 'ARROWRIGHT', 'TAB', 'ENTER', 'SPACE', 'ESCAPE', 'HOME', 'END', 'PAGEUP', 'PAGEDOWN'];
-  let currentFocusedElement = null;
-  let mouseClick = null;
+  var navKeys = ['ARROWUP', 'ARROWDOWN', 'ARROWLEFT', 'ARROWRIGHT', 'TAB', 'ENTER', 'SPACE', 'ESCAPE', 'HOME', 'END', 'PAGEUP', 'PAGEDOWN'];
+  var currentFocusedElement = null;
+  var mouseClick = null;
   window.addEventListener('keydown', event => {
     if (navKeys.includes(event.code.toUpperCase())) {
       mouseClick = false;
@@ -96,9 +96,9 @@ function removeTrapFocus(elementToFocus = null) {
 }
 function onKeyUpEscape(event) {
   if (event.code.toUpperCase() !== 'ESCAPE') return;
-  const openDetailsElement = event.target.closest('details[open]');
+  var openDetailsElement = event.target.closest('details[open]');
   if (!openDetailsElement) return;
-  const summaryElement = openDetailsElement.querySelector('summary');
+  var summaryElement = openDetailsElement.querySelector('summary');
   openDetailsElement.removeAttribute('open');
   summaryElement.setAttribute('aria-expanded', false);
   summaryElement.focus();
@@ -128,36 +128,36 @@ class QuantityInput extends HTMLElement {
   }
   onButtonClick(event) {
     event.preventDefault();
-    const previousValue = this.input.value;
+    var previousValue = this.input.value;
     event.target.name === 'plus' ? this.input.stepUp() : this.input.stepDown();
     if (previousValue !== this.input.value) this.input.dispatchEvent(this.changeEvent);
   }
   validateQtyRules() {
-    const value = parseInt(this.input.value);
+    var value = parseInt(this.input.value);
     if (this.input.min) {
-      const min = parseInt(this.input.min);
-      const buttonMinus = this.querySelector(".quantity__button[name='minus']");
+      var min = parseInt(this.input.min);
+      var buttonMinus = this.querySelector(".quantity__button[name='minus']");
       buttonMinus.classList.toggle('disabled', value <= min);
     }
     if (this.input.max) {
-      const max = parseInt(this.input.max);
-      const buttonPlus = this.querySelector(".quantity__button[name='plus']");
+      var max = parseInt(this.input.max);
+      var buttonPlus = this.querySelector(".quantity__button[name='plus']");
       buttonPlus.classList.toggle('disabled', value >= max);
     }
   }
 }
 customElements.define('quantity-input', QuantityInput);
 function debounce(fn, wait) {
-  let t;
+  var t;
   return (...args) => {
     clearTimeout(t);
     t = setTimeout(() => fn.apply(this, args), wait);
   };
 }
 function throttle(fn, delay) {
-  let lastCall = 0;
+  var lastCall = 0;
   return function (...args) {
-    const now = new Date().getTime();
+    var now = new Date().getTime();
     if (now - lastCall < delay) {
       return;
     }
@@ -282,16 +282,16 @@ class MenuDrawer extends HTMLElement {
   }
   onKeyUp(event) {
     if (event.code.toUpperCase() !== 'ESCAPE') return;
-    const openDetailsElement = event.target.closest('details[open]');
+    var openDetailsElement = event.target.closest('details[open]');
     if (!openDetailsElement) return;
     openDetailsElement === this.mainDetailsToggle ? this.closeMenuDrawer(event, this.mainDetailsToggle.querySelector('summary')) : this.closeSubmenu(openDetailsElement);
   }
   onSummaryClick(event) {
-    const summaryElement = event.currentTarget;
-    const detailsElement = summaryElement.parentNode;
-    const parentMenuElement = detailsElement.closest('.has-submenu');
-    const isOpen = detailsElement.hasAttribute('open');
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var summaryElement = event.currentTarget;
+    var detailsElement = summaryElement.parentNode;
+    var parentMenuElement = detailsElement.closest('.has-submenu');
+    var isOpen = detailsElement.hasAttribute('open');
+    var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     function addTrapFocus() {
       trapFocus(summaryElement.nextElementSibling, detailsElement.querySelector('button'));
       summaryElement.nextElementSibling.removeEventListener('transitionend', addTrapFocus);
@@ -340,11 +340,11 @@ class MenuDrawer extends HTMLElement {
     });
   }
   onCloseButtonClick(event) {
-    const detailsElement = event.currentTarget.closest('details');
+    var detailsElement = event.currentTarget.closest('details');
     this.closeSubmenu(detailsElement);
   }
   closeSubmenu(detailsElement) {
-    const parentMenuElement = detailsElement.closest('.submenu-open');
+    var parentMenuElement = detailsElement.closest('.submenu-open');
     parentMenuElement && parentMenuElement.classList.remove('submenu-open');
     detailsElement.classList.remove('menu-opening');
     detailsElement.querySelector('summary').setAttribute('aria-expanded', false);
@@ -352,12 +352,12 @@ class MenuDrawer extends HTMLElement {
     this.closeAnimation(detailsElement);
   }
   closeAnimation(detailsElement) {
-    let animationStart;
-    const handleAnimation = time => {
+    var animationStart;
+    var handleAnimation = time => {
       if (animationStart === undefined) {
         animationStart = time;
       }
-      const elapsedTime = time - animationStart;
+      var elapsedTime = time - animationStart;
       if (elapsedTime < 400) {
         window.requestAnimationFrame(handleAnimation);
       } else {
@@ -424,7 +424,7 @@ class ModalDialog extends HTMLElement {
   }
   show(opener) {
     this.openedBy = opener;
-    const popup = this.querySelector('.template-popup');
+    var popup = this.querySelector('.template-popup');
     document.body.classList.add('overflow-hidden');
     this.setAttribute('open', '');
     if (popup) popup.loadContent();
@@ -443,10 +443,10 @@ customElements.define('modal-dialog', ModalDialog);
 class ModalOpener extends HTMLElement {
   constructor() {
     super();
-    const button = this.querySelector('button');
+    var button = this.querySelector('button');
     if (!button) return;
     button.addEventListener('click', () => {
-      const modal = document.querySelector(this.getAttribute('data-modal'));
+      var modal = document.querySelector(this.getAttribute('data-modal'));
       if (modal) modal.show(button);
     });
   }
@@ -455,17 +455,17 @@ customElements.define('modal-opener', ModalOpener);
 class DeferredMedia extends HTMLElement {
   constructor() {
     super();
-    const poster = this.querySelector('[id^="Deferred-Poster-"]');
+    var poster = this.querySelector('[id^="Deferred-Poster-"]');
     if (!poster) return;
     poster.addEventListener('click', this.loadContent.bind(this));
   }
   loadContent(focus = true) {
     window.pauseAllMedia();
     if (!this.getAttribute('loaded')) {
-      const content = document.createElement('div');
+      var content = document.createElement('div');
       content.appendChild(this.querySelector('template').content.firstElementChild.cloneNode(true));
       this.setAttribute('loaded', true);
-      const deferredElement = this.appendChild(content.querySelector('video, model-viewer, iframe'));
+      var deferredElement = this.appendChild(content.querySelector('video, model-viewer, iframe'));
       if (focus) deferredElement.focus();
       if (deferredElement.nodeName == 'VIDEO' && deferredElement.getAttribute('autoplay')) {
         // force autoplay for safari
@@ -487,7 +487,7 @@ class SliderComponent extends HTMLElement {
     this.nextButton = this.querySelector('button[name="next"]');
     if (!this.slider || !this.nextButton) return;
     this.initPages();
-    const resizeObserver = new ResizeObserver(entries => this.initPages());
+    var resizeObserver = new ResizeObserver(entries => this.initPages());
     resizeObserver.observe(this.slider);
     this.slider.addEventListener('scroll', this.update.bind(this));
     this.prevButton.addEventListener('click', this.onButtonClick.bind(this));
@@ -509,7 +509,7 @@ class SliderComponent extends HTMLElement {
     // Temporarily prevents unneeded updates resulting from variant changes
     // This should be refactored as part of https://github.com/Shopify/dawn/issues/2057
     if (!this.slider || !this.nextButton) return;
-    const previousPage = this.currentPage;
+    var previousPage = this.currentPage;
     this.currentPage = Math.round(this.slider.scrollLeft / this.sliderItemOffset) + 1;
     if (this.currentPageElement && this.pageTotalElement) {
       this.currentPageElement.textContent = this.currentPage;
@@ -536,12 +536,12 @@ class SliderComponent extends HTMLElement {
     }
   }
   isSlideVisible(element, offset = 0) {
-    const lastVisibleSlide = this.slider.clientWidth + this.slider.scrollLeft - offset;
+    var lastVisibleSlide = this.slider.clientWidth + this.slider.scrollLeft - offset;
     return element.offsetLeft + element.clientWidth <= lastVisibleSlide && element.offsetLeft >= this.slider.scrollLeft;
   }
   onButtonClick(event) {
     event.preventDefault();
-    const step = event.currentTarget.dataset.step || 1;
+    var step = event.currentTarget.dataset.step || 1;
     this.slideScrollPosition = event.currentTarget.name === 'next' ? this.slider.scrollLeft + step * this.sliderItemOffset : this.slider.scrollLeft - step * this.sliderItemOffset;
     this.setSlidePosition(this.slideScrollPosition);
   }
@@ -601,8 +601,8 @@ class SlideshowComponent extends SliderComponent {
   onButtonClick(event) {
     super.onButtonClick(event);
     this.wasClicked = true;
-    const isFirstSlide = this.currentPage === 1;
-    const isLastSlide = this.currentPage === this.sliderItemsToShow.length;
+    var isFirstSlide = this.currentPage === 1;
+    var isLastSlide = this.currentPage === this.sliderItemsToShow.length;
     if (!isFirstSlide && !isLastSlide) {
       this.applyAnimationToAnnouncementBar(event.currentTarget.name);
       return;
@@ -642,7 +642,7 @@ class SlideshowComponent extends SliderComponent {
   }
   focusOutHandling(event) {
     if (this.sliderAutoplayButton) {
-      const focusedOnAutoplayButton = event.target === this.sliderAutoplayButton || this.sliderAutoplayButton.contains(event.target);
+      var focusedOnAutoplayButton = event.target === this.sliderAutoplayButton || this.sliderAutoplayButton.contains(event.target);
       if (!this.autoplayButtonIsSetToPlay || focusedOnAutoplayButton) return;
       this.play();
     } else if (!this.reducedMotion.matches && !this.announcementBarArrowButtonWasClicked) {
@@ -651,7 +651,7 @@ class SlideshowComponent extends SliderComponent {
   }
   focusInHandling(event) {
     if (this.sliderAutoplayButton) {
-      const focusedOnAutoplayButton = event.target === this.sliderAutoplayButton || this.sliderAutoplayButton.contains(event.target);
+      var focusedOnAutoplayButton = event.target === this.sliderAutoplayButton || this.sliderAutoplayButton.contains(event.target);
       if (focusedOnAutoplayButton && this.autoplayButtonIsSetToPlay) {
         this.play();
       } else if (this.autoplayButtonIsSetToPlay) {
@@ -680,13 +680,13 @@ class SlideshowComponent extends SliderComponent {
     }
   }
   autoRotateSlides() {
-    const slideScrollPosition = this.currentPage === this.sliderItems.length ? 0 : this.slider.scrollLeft + this.sliderItemOffset;
+    var slideScrollPosition = this.currentPage === this.sliderItems.length ? 0 : this.slider.scrollLeft + this.sliderItemOffset;
     this.setSlidePosition(slideScrollPosition);
     this.applyAnimationToAnnouncementBar();
   }
   setSlideVisibility(event) {
     this.sliderItemsToShow.forEach((item, index) => {
-      const linkElements = item.querySelectorAll('a');
+      var linkElements = item.querySelectorAll('a');
       if (index === this.currentPage - 1) {
         if (linkElements.length) linkElements.forEach(button => {
           button.removeAttribute('tabindex');
@@ -705,19 +705,19 @@ class SlideshowComponent extends SliderComponent {
   }
   applyAnimationToAnnouncementBar(button = 'next') {
     if (!this.announcementBarSlider) return;
-    const itemsCount = this.sliderItems.length;
-    const increment = button === 'next' ? 1 : -1;
-    const currentIndex = this.currentPage - 1;
-    let nextIndex = (currentIndex + increment) % itemsCount;
+    var itemsCount = this.sliderItems.length;
+    var increment = button === 'next' ? 1 : -1;
+    var currentIndex = this.currentPage - 1;
+    var nextIndex = (currentIndex + increment) % itemsCount;
     nextIndex = nextIndex === -1 ? itemsCount - 1 : nextIndex;
-    const nextSlide = this.sliderItems[nextIndex];
-    const currentSlide = this.sliderItems[currentIndex];
-    const animationClassIn = 'announcement-bar-slider--fade-in';
-    const animationClassOut = 'announcement-bar-slider--fade-out';
-    const isFirstSlide = currentIndex === 0;
-    const isLastSlide = currentIndex === itemsCount - 1;
-    const shouldMoveNext = button === 'next' && !isLastSlide || button === 'previous' && isFirstSlide;
-    const direction = shouldMoveNext ? 'next' : 'previous';
+    var nextSlide = this.sliderItems[nextIndex];
+    var currentSlide = this.sliderItems[currentIndex];
+    var animationClassIn = 'announcement-bar-slider--fade-in';
+    var animationClassOut = 'announcement-bar-slider--fade-out';
+    var isFirstSlide = currentIndex === 0;
+    var isLastSlide = currentIndex === itemsCount - 1;
+    var shouldMoveNext = button === 'next' && !isLastSlide || button === 'previous' && isFirstSlide;
+    var direction = shouldMoveNext ? 'next' : 'previous';
     currentSlide.classList.add(`${animationClassOut}-${direction}`);
     nextSlide.classList.add(`${animationClassIn}-${direction}`);
     setTimeout(() => {
@@ -727,7 +727,7 @@ class SlideshowComponent extends SliderComponent {
   }
   linkToSlide(event) {
     event.preventDefault();
-    const slideScrollPosition = this.slider.scrollLeft + this.sliderFirstItemNode.clientWidth * (this.sliderControlLinksArray.indexOf(event.currentTarget) + 1 - this.currentPage);
+    var slideScrollPosition = this.slider.scrollLeft + this.sliderFirstItemNode.clientWidth * (this.sliderControlLinksArray.indexOf(event.currentTarget) + 1 - this.currentPage);
     this.slider.scrollTo({
       left: slideScrollPosition
     });
@@ -770,11 +770,11 @@ class VariantSelects extends HTMLElement {
   updateMedia() {
     if (!this.currentVariant) return;
     if (!this.currentVariant.featured_media) return;
-    const mediaGalleries = document.querySelectorAll(`[id^="MediaGallery-${this.dataset.section}"]`);
+    var mediaGalleries = document.querySelectorAll(`[id^="MediaGallery-${this.dataset.section}"]`);
     mediaGalleries.forEach(mediaGallery => mediaGallery.setActiveMedia(`${this.dataset.section}-${this.currentVariant.featured_media.id}`, true));
-    const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
+    var modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
     if (!modalContent) return;
-    const newMediaModal = modalContent.querySelector(`[data-media-id="${this.currentVariant.featured_media.id}"]`);
+    var newMediaModal = modalContent.querySelector(`[data-media-id="${this.currentVariant.featured_media.id}"]`);
     modalContent.prepend(newMediaModal);
   }
   updateURL() {
@@ -782,14 +782,14 @@ class VariantSelects extends HTMLElement {
     window.history.replaceState({}, '', `${this.dataset.url}?variant=${this.currentVariant.id}`);
   }
   updateShareUrl() {
-    const shareButton = document.getElementById(`Share-${this.dataset.section}`);
+    var shareButton = document.getElementById(`Share-${this.dataset.section}`);
     if (!shareButton || !shareButton.updateUrl) return;
     shareButton.updateUrl(`${window.shopUrl}${this.dataset.url}?variant=${this.currentVariant.id}`);
   }
   updateVariantInput() {
-    const productForms = document.querySelectorAll(`#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}`);
+    var productForms = document.querySelectorAll(`#product-form-${this.dataset.section}, #product-form-installment-${this.dataset.section}`);
     productForms.forEach(productForm => {
-      const input = productForm.querySelector('input[name="id"]');
+      var input = productForm.querySelector('input[name="id"]');
       input.value = this.currentVariant.id;
       input.dispatchEvent(new Event('change', {
         bubbles: true
@@ -797,13 +797,13 @@ class VariantSelects extends HTMLElement {
     });
   }
   updateVariantStatuses() {
-    const selectedOptionOneVariants = this.variantData.filter(variant => this.querySelector(':checked').value === variant.option1);
-    const inputWrappers = [...this.querySelectorAll('.product-form__input')];
+    var selectedOptionOneVariants = this.variantData.filter(variant => this.querySelector(':checked').value === variant.option1);
+    var inputWrappers = [...this.querySelectorAll('.product-form__input')];
     inputWrappers.forEach((option, index) => {
       if (index === 0) return;
-      const optionInputs = [...option.querySelectorAll('input[type="radio"], option')];
-      const previousOptionSelected = inputWrappers[index - 1].querySelector(':checked').value;
-      const availableOptionInputsValue = selectedOptionOneVariants.filter(variant => variant.available && variant[`option${index}`] === previousOptionSelected).map(variantOption => variantOption[`option${index + 1}`]);
+      var optionInputs = [...option.querySelectorAll('input[type="radio"], option')];
+      var previousOptionSelected = inputWrappers[index - 1].querySelector(':checked').value;
+      var availableOptionInputsValue = selectedOptionOneVariants.filter(variant => variant.available && variant[`option${index}`] === previousOptionSelected).map(variantOption => variantOption[`option${index + 1}`]);
       this.setInputAvailability(optionInputs, availableOptionInputsValue);
     });
   }
@@ -817,7 +817,7 @@ class VariantSelects extends HTMLElement {
     });
   }
   updatePickupAvailability() {
-    const pickUpAvailability = document.querySelector('pickup-availability');
+    var pickUpAvailability = document.querySelector('pickup-availability');
     if (!pickUpAvailability) return;
     if (this.currentVariant && this.currentVariant.available) {
       pickUpAvailability.fetchAvailability(this.currentVariant.id);
@@ -827,30 +827,30 @@ class VariantSelects extends HTMLElement {
     }
   }
   removeErrorMessage() {
-    const section = this.closest('section');
+    var section = this.closest('section');
     if (!section) return;
-    const productForm = section.querySelector('product-form');
+    var productForm = section.querySelector('product-form');
     if (productForm) productForm.handleErrorMessage();
   }
   renderProductInfo() {
-    const requestedVariantId = this.currentVariant.id;
-    const sectionId = this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section;
+    var requestedVariantId = this.currentVariant.id;
+    var sectionId = this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section;
     fetch(`${this.dataset.url}?variant=${requestedVariantId}&section_id=${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`).then(response => response.text()).then(responseText => {
       // prevent unnecessary ui changes from abandoned selections
       if (this.currentVariant.id !== requestedVariantId) return;
-      const html = new DOMParser().parseFromString(responseText, 'text/html');
-      const destination = document.getElementById(`price-${this.dataset.section}`);
-      const source = html.getElementById(`price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
-      const skuSource = html.getElementById(`Sku-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
-      const skuDestination = document.getElementById(`Sku-${this.dataset.section}`);
-      const inventorySource = html.getElementById(`Inventory-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
-      const inventoryDestination = document.getElementById(`Inventory-${this.dataset.section}`);
-      const volumePricingSource = html.getElementById(`Volume-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
-      const pricePerItemDestination = document.getElementById(`Price-Per-Item-${this.dataset.section}`);
-      const pricePerItemSource = html.getElementById(`Price-Per-Item-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
-      const volumePricingDestination = document.getElementById(`Volume-${this.dataset.section}`);
-      const qtyRules = document.getElementById(`Quantity-Rules-${this.dataset.section}`);
-      const volumeNote = document.getElementById(`Volume-Note-${this.dataset.section}`);
+      var html = new DOMParser().parseFromString(responseText, 'text/html');
+      var destination = document.getElementById(`price-${this.dataset.section}`);
+      var source = html.getElementById(`price-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+      var skuSource = html.getElementById(`Sku-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+      var skuDestination = document.getElementById(`Sku-${this.dataset.section}`);
+      var inventorySource = html.getElementById(`Inventory-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+      var inventoryDestination = document.getElementById(`Inventory-${this.dataset.section}`);
+      var volumePricingSource = html.getElementById(`Volume-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+      var pricePerItemDestination = document.getElementById(`Price-Per-Item-${this.dataset.section}`);
+      var pricePerItemSource = html.getElementById(`Price-Per-Item-${this.dataset.originalSection ? this.dataset.originalSection : this.dataset.section}`);
+      var volumePricingDestination = document.getElementById(`Volume-${this.dataset.section}`);
+      var qtyRules = document.getElementById(`Quantity-Rules-${this.dataset.section}`);
+      var volumeNote = document.getElementById(`Volume-Note-${this.dataset.section}`);
       if (volumeNote) volumeNote.classList.remove('hidden');
       if (volumePricingDestination) volumePricingDestination.classList.remove('hidden');
       if (qtyRules) qtyRules.classList.remove('hidden');
@@ -867,10 +867,10 @@ class VariantSelects extends HTMLElement {
         pricePerItemDestination.innerHTML = pricePerItemSource.innerHTML;
         pricePerItemDestination.classList.toggle('hidden', pricePerItemSource.classList.contains('hidden'));
       }
-      const price = document.getElementById(`price-${this.dataset.section}`);
+      var price = document.getElementById(`price-${this.dataset.section}`);
       if (price) price.classList.remove('hidden');
       if (inventoryDestination) inventoryDestination.classList.toggle('hidden', inventorySource.innerText === '');
-      const addButtonUpdated = html.getElementById(`ProductSubmitButton-${sectionId}`);
+      var addButtonUpdated = html.getElementById(`ProductSubmitButton-${sectionId}`);
       this.toggleAddButton(addButtonUpdated ? addButtonUpdated.hasAttribute('disabled') : true, window.variantStrings.soldOut);
       publish(PUB_SUB_EVENTS.variantChange, {
         data: {
@@ -882,10 +882,10 @@ class VariantSelects extends HTMLElement {
     });
   }
   toggleAddButton(disable = true, text, modifyClass = true) {
-    const productForm = document.getElementById(`product-form-${this.dataset.section}`);
+    var productForm = document.getElementById(`product-form-${this.dataset.section}`);
     if (!productForm) return;
-    const addButton = productForm.querySelector('[name="add"]');
-    const addButtonText = productForm.querySelector('[name="add"] > span');
+    var addButton = productForm.querySelector('[name="add"]');
+    var addButtonText = productForm.querySelector('[name="add"] > span');
     if (!addButton) return;
     if (disable) {
       addButton.setAttribute('disabled', 'disabled');
@@ -897,16 +897,16 @@ class VariantSelects extends HTMLElement {
     if (!modifyClass) return;
   }
   setUnavailable() {
-    const button = document.getElementById(`product-form-${this.dataset.section}`);
-    const addButton = button.querySelector('[name="add"]');
-    const addButtonText = button.querySelector('[name="add"] > span');
-    const price = document.getElementById(`price-${this.dataset.section}`);
-    const inventory = document.getElementById(`Inventory-${this.dataset.section}`);
-    const sku = document.getElementById(`Sku-${this.dataset.section}`);
-    const pricePerItem = document.getElementById(`Price-Per-Item-${this.dataset.section}`);
-    const volumeNote = document.getElementById(`Volume-Note-${this.dataset.section}`);
-    const volumeTable = document.getElementById(`Volume-${this.dataset.section}`);
-    const qtyRules = document.getElementById(`Quantity-Rules-${this.dataset.section}`);
+    var button = document.getElementById(`product-form-${this.dataset.section}`);
+    var addButton = button.querySelector('[name="add"]');
+    var addButtonText = button.querySelector('[name="add"] > span');
+    var price = document.getElementById(`price-${this.dataset.section}`);
+    var inventory = document.getElementById(`Inventory-${this.dataset.section}`);
+    var sku = document.getElementById(`Sku-${this.dataset.section}`);
+    var pricePerItem = document.getElementById(`Price-Per-Item-${this.dataset.section}`);
+    var volumeNote = document.getElementById(`Volume-Note-${this.dataset.section}`);
+    var volumeTable = document.getElementById(`Volume-${this.dataset.section}`);
+    var qtyRules = document.getElementById(`Quantity-Rules-${this.dataset.section}`);
     if (!addButton) return;
     addButtonText.textContent = window.variantStrings.unavailable;
     if (price) price.classList.add('hidden');
@@ -937,7 +937,7 @@ class VariantRadios extends VariantSelects {
     });
   }
   updateOptions() {
-    const fieldsets = Array.from(this.querySelectorAll('fieldset'));
+    var fieldsets = Array.from(this.querySelectorAll('fieldset'));
     this.options = fieldsets.map(fieldset => {
       return Array.from(fieldset.querySelectorAll('input')).find(radio => radio.checked).value;
     });
@@ -949,13 +949,13 @@ class ProductRecommendations extends HTMLElement {
     super();
   }
   connectedCallback() {
-    const handleIntersection = (entries, observer) => {
+    var handleIntersection = (entries, observer) => {
       if (!entries[0].isIntersecting) return;
       observer.unobserve(this);
       fetch(this.dataset.url).then(response => response.text()).then(text => {
-        const html = document.createElement('div');
+        var html = document.createElement('div');
         html.innerHTML = text;
-        const recommendations = html.querySelector('product-recommendations');
+        var recommendations = html.querySelector('product-recommendations');
         if (recommendations && recommendations.innerHTML.trim().length) {
           this.innerHTML = recommendations.innerHTML;
         }
