@@ -16,9 +16,5 @@
   "bugs": {
     "url": "https://github.com/bunkernine/dawn/issues"
   },
-  "homepage": "https://github.com/bunkernine/dawn#readme",
-  "devDependencies": {
-    "@shopify/babel-preset": "25.0.0",
-    "babel-core": "6.26.3"
-  }
+  "homepage": "https://github.com/bunkernine/dawn#readme"
 }
