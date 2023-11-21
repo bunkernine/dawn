@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/bunkernine/dawn/issues"
   },
-  "homepage": "https://github.com/bunkernine/dawn#readme"
+  "homepage": "https://github.com/bunkernine/dawn#readme",
+  "dependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20"
+  }
 }
