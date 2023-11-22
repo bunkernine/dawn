@@ -1646,7 +1646,95 @@
             "text": "প্রাইম অর্ডার দিয়ে কিনুন ট্র্যাক এবং পরিচালনা করুন",
             "new_window_disclaimer": "(একটি নতুন উইন্ডো খোলে)"
           }
-        }
+        },
+        "attempted_delivery_label": "ডেলিভারির চেষ্টা করা হয়েছে",
+        "attempted_delivery_description": "বিতরণ প্রচেষ্টা ব্যর্থ হয়েছে.",
+        "attempted_to_deliver_label": "পৌঁছে দেওয়ার চেষ্টা করা হয়েছে",
+        "confirmed_description": "আমরা আপনার অর্ডার পেয়েছি।",
+        "on_its_way_description": "এই চালান তার পথে আছে.",
+        "out_for_delivery_description": "এই চালান ডেলিভারির জন্য আউট.",
+        "preparing_for_shipping_label": "শিপিং জন্য প্রস্তুতি",
+        "preparing_for_shipping_description": "এই আইটেম শিপিং জন্য প্রস্তুত করা হচ্ছে.",
+        "ready_for_pickup_label": "উঠানোর জন্য প্রস্তুত",
+        "ready_for_pickup_description": "এই আইটেমগুলি পিক আপ জন্য প্রস্তুত. আপনার অর্ডার নেওয়ার সময় অনুগ্রহ করে আপনার অর্ডার নিশ্চিতকরণ আনুন।",
+        "ready_for_pickup_location": "আপনার অর্ডার লোকেশনে পিকআপের জন্য প্রস্তুত",
+        "picked_up_label": "পিক আপ",
+        "picked_up_description": "এসব আইটেম তোলা হয়েছে।",
+        "canceled_description": "আপনার অর্ডার বাতিল করা হয়েছে {{date}} তারিখে।",
+        "canceled_label": "বাতিল",
+        "canceled_title": "আপনার অর্ডার বাতিল করা হয়েছে",
+        "come_back": "আপনার চালানের অবস্থার আপডেটের জন্য এই পৃষ্ঠায় ফিরে আসুন।",
+        "company_tracking_number": "{{company}} ট্র্যাকিং নম্বর:",
+        "confirmed_label": "নিশ্চিত করা হয়েছে",
+        "confirmed_title": "আপনার অর্ডার নিশ্চিত করা হয়েছে",
+        "confirmed_description_pickup": "আপনার অর্ডার পিকআপের জন্য প্রস্তুত হলে আপনি একটি ইমেল পাবেন।",
+        "confirmed_description_digital": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি ইমেল পাবেন।",
+        "confirmed_description_gift_card_text": "আপনার অর্ডার প্রস্তুত হলে আপনি একটি টেক্সট পাবেন।",
+        "delivered_description": "এই চালান বিতরণ করা হয়েছে.",
+        "delivered_label": "বিতরণ করা হয়েছে",
+        "delivered_title": "আপনার চালান বিতরণ করা হয়েছে",
+        "delivered_description_digital": "আপনার অর্ডার সম্পূর্ণ.",
+        "delivered_description_gift_card": {
+          "one": "উপহার কার্ড ইমেল দ্বারা পাঠানো হয়েছে.",
+          "other": "উপহার কার্ড ইমেল দ্বারা পাঠানো হয়েছে."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "টেক্সট দ্বারা উপহার কার্ড পাঠানো হয়েছে.",
+          "other": "টেক্সট দ্বারা উপহার কার্ড পাঠানো হয়েছে."
+        },
+        "gift_card_label": {
+          "one": "উপহার কার্ড",
+          "other": "উপহার কার্ড"
+        },
+        "gift_card_resend": {
+          "one": "ইমেল পুনরায় পাঠান",
+          "other": "ইমেল পুনরায় পাঠান"
+        },
+        "gift_card_resend_text": {
+          "one": "পাঠ্য পুনরায় পাঠান",
+          "other": "টেক্সট আবার পাঠান"
+        },
+        "gift_resend_success": {
+          "one": "উপহার কার্ড আবার পাঠানো হয়েছে",
+          "other": "উপহার কার্ড পুনরায় পাঠানো হয়েছে"
+        },
+        "gift_resend_failure": {
+          "one": "আপনার উপহার কার্ড পুনরায় পাঠাতে একটি সমস্যা হয়েছে৷ আবার চেষ্টা করুন বা আমাদের সাথে যোগাযোগ করুন.",
+          "other": "আপনার উপহার কার্ড পুনরায় পাঠাতে একটি সমস্যা হয়েছে৷ আবার চেষ্টা করুন বা আমাদের সাথে যোগাযোগ করুন."
+        },
+        "gift_card_resend_description": {
+          "one": "এটি প্রাপ্ত না হলে, ইমেল পুনরায় পাঠান বা",
+          "other": "যদি তারা প্রাপ্ত না হয়, ইমেল পুনরায় পাঠান বা"
+        },
+        "gift_card_resend_description_text": {
+          "one": "এটি প্রাপ্ত না হলে, টেক্সট আবার পাঠান বা",
+          "other": "যদি তারা প্রাপ্ত না হয়, টেক্সট পুনরায় পাঠান বা"
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "উপহার কার্ড একটি পৃথক ইমেল পাঠানো হবে.",
+          "other": "প্রতিটি উপহার কার্ড একটি পৃথক ইমেল পাঠানো হবে."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "উপহার কার্ডটি একটি পৃথক পাঠ্যে পাঠানো হবে।",
+          "other": "প্রতিটি উপহার কার্ড একটি পৃথক পাঠ্য পাঠানো হবে."
+        },
+        "estimated_delivery": "সম্ভাব্য প্রসব {{date}}",
+        "in_review_description": "আমাদের আরও তথ্যের প্রয়োজন হলে বা আপনার অর্ডার নিশ্চিত হলে আমরা আপনাকে জানাব।",
+        "in_review_label": "পর্যালোচনা",
+        "in_review_title": "আপনার অর্ডার পর্যালোচনা করা হচ্ছে",
+        "last_updated": "সর্বশেষ আপডেট করা হয়েছে {{date}}",
+        "multiple_shipments_label": "একাধিক চালান",
+        "no_tracking_number": "এই চালানের জন্য কোন ট্র্যাকিং নম্বর নেই.",
+        "on_its_way_label": "তার পথে",
+        "on_its_way_title": "আপনার চালান পথে আছে",
+        "out_for_delivery_label": "ডেলিভারির জন্য আউট",
+        "out_for_delivery_title": "আপনার চালান ডেলিভারির জন্য আউট",
+        "resume_tracking": "ট্র্যাকিং পুনরায় শুরু করুন",
+        "submitted_label": "জমা দেওয়া হয়েছে",
+        "submitted_description": "অর্ডার এবং পেমেন্টের বিবরণ পর্যালোচনা করুন।",
+        "there_was_a_problem_label": "একটা সমস্যা ছিল",
+        "track_shipment": "ট্রাকে পরিবহন করা",
+        "request_return": "রিটার্নের অনুরোধ করুন"
       },
       "status_mark_as_delivered": "বিতরণ করা হিসাবে চিহ্নিত করুন",
       "status_title": "অর্ডারের অবস্থা",
@@ -1740,9 +1828,57 @@
           },
           "table_view": {
             "overdue": "ওভারডিউ",
-            "due": "নির্দিষ্ট {{date}}"
+            "due": "নির্দিষ্ট {{date}}",
+            "due_today": "আজ বাকি",
+            "paid": "পেড",
+            "due_without_date": "বাকি",
+            "due_on_fulfillment": "পূর্ণতার উপর বকেয়া",
+            "pay_to_confirm": "নিশ্চিত করতে অর্থ প্রদান করুন",
+            "payment_not_due": "এখনো বকেয়া হয়নি"
           }
-        }
+        },
+        "sort_by": "অনুসারে সাজান: {{option}}",
+        "sort_hide_options_accessibility_label": "নিশ্চিত অর্ডারের জন্য সাজানোর বিকল্প লুকান।",
+        "sort_show_options_accessibility_label": "নিশ্চিত অর্ডারের জন্য সাজানোর বিকল্প দেখান।",
+        "sort_currently_sorted_by_accessibility_label": "বর্তমানে এই অনুসারে সাজানো হয়েছে: {{option}}",
+        "sort_title": "সাজান",
+        "sort": {
+          "date": {
+            "newest": "নতুন থেকে পুরাতন",
+            "oldest": "প্রাচীন থেকে নতুন"
+          },
+          "location": {
+            "ascending": "অবস্থান (AZ)",
+            "descending": "অবস্থান (ZA)"
+          },
+          "order_number": {
+            "ascending": "অর্ডার নম্বর (নিম্ন থেকে উচ্চ)",
+            "descending": "অর্ডার নম্বর (উচ্চ থেকে কম)"
+          },
+          "order_total": {
+            "ascending": "মোট অর্ডার (নিম্ন থেকে উচ্চ)",
+            "descending": "মোট অর্ডার (উচ্চ থেকে কম)"
+          }
+        },
+        "filter_title": "ছাঁকনি",
+        "filter": {
+          "clear_section": "বিভাগ পরিষ্কার করুন",
+          "clear_all": "সব পরিষ্কার করে দাও",
+          "apply": "আবেদন করুন",
+          "date": {
+            "start_date": "শুরুর তারিখ",
+            "end_date": "শেষ তারিখ",
+            "title": "অর্ডারের তারিখ",
+            "today": "আজ",
+            "last_7_days": "গত ৭ দিন",
+            "last_30_days": "শেষ 30 দিন",
+            "last_90_days": "গত ৯০ দিন",
+            "last_365_days": "গত 12 মাস",
+            "custom": "কাস্টম"
+          }
+        },
+        "table_view": "টেবিল ভিউ দেখান",
+        "show_order_actions_accessibility_label": "অর্ডার {{name}} এর জন্য অর্ডার ক্রিয়া দেখান"
       }
     },
     "order_details": {
@@ -2081,7 +2217,18 @@
       "showNextMonth": "পরের মাসে দেখান, {{month}} {{year}}",
       "showPreviousMonth": "আগের মাস দেখান, {{month}} {{year}}",
       "rangeStart": "পরিসীমা শুরু",
-      "inRange": "সীমার মধ্যে"
+      "inRange": "সীমার মধ্যে",
+      "rangeEnd": "পরিসীমা শেষ",
+      "autocompleteOptionsAvailable": {
+        "one": "{{count}} টি আইটেম উপলব্ধ৷",
+        "other": "{{count}} টি আইটেম উপলব্ধ৷"
+      },
+      "removeItem": "{{label}} সরান",
+      "removeTag": "ট্যাগ সরান",
+      "month": {
+        "one": "মাস",
+        "other": "মাস"
+      }
     },
     "B2B": {
       "purchase_order_number": {
@@ -2291,6 +2438,26 @@
         "title": "ত্রুটি",
         "description": "এই পৃষ্ঠাটি রিফ্রেশ করুন বা কয়েক মিনিটের মধ্যে আবার চেষ্টা করুন৷",
         "refresh_button": "সতেজ পৃষ্ঠা"
+      }
+    },
+    "profile_preview_bar": {
+      "customize_button": "কাস্টমাইজ করুন",
+      "hide_bar": "বার লুকান",
+      "navigate_to_admin": "অ্যাডমিনে নেভিগেট করুন",
+      "close_preview": "প্রিভিউ বন্ধ করুন",
+      "previewing": "আপনি পূর্বরূপ দেখছেন:",
+      "saved_at": "সংরক্ষিত {{date}} এ {{time}}",
+      "viewing": "আপনি দেখছেন:",
+      "not_available": "প্রোফাইল ডেটা উপলব্ধ নয়",
+      "actions_button": "কর্ম"
+    },
+    "settings": {
+      "title": "সেটিংস",
+      "log_out_everywhere": {
+        "title": "সর্বত্র লগ আউট করুন",
+        "description": "আপনি যদি একটি ডিভাইস হারিয়ে থাকেন বা নিরাপত্তা সংক্রান্ত উদ্বেগ থাকে, তাহলে আপনার অ্যাকাউন্টের নিরাপত্তা নিশ্চিত করতে সর্বত্র লগ আউট করুন৷",
+        "button": "সর্বত্র লগ আউট করুন",
+        "warning_message": "আপনি এই ডিভাইসেও লগ আউট হবেন।"
       }
     }
   },
@@ -2542,5 +2709,129 @@
     "language_label": "ভাষা",
     "update_language": "ভাষা আপডেট করুন",
     "update_country": "দেশ\/অঞ্চল আপডেট করুন"
+  },
+  "sections": {
+    "announcements": {
+      "previous_announcement": "আগের ঘোষণা",
+      "next_announcement": "পরবর্তী ঘোষণা",
+      "carousel": "ক্যারোসেল",
+      "announcement": "ঘোষণা",
+      "announcement_bar": "ঘোষণা বার"
+    },
+    "header": {
+      "announcement": "ঘোষণা",
+      "menu": "তালিকা",
+      "cart_count": {
+        "one": "{{ count }} আইটেম",
+        "other": "{{ count }} টি আইটেম৷"
+      }
+    },
+    "cart": {
+      "title": "আপনার কার্ট",
+      "caption": "কার্ট আইটেম",
+      "remove_title": "সরান {{ title }}",
+      "estimated_total": "সম্ভাব্য হিসাব",
+      "new_estimated_total": "নতুন আনুমানিক মোট",
+      "note": "বিশেষ নির্দেশাবলী অর্ডার করুন",
+      "checkout": "চেক আউট",
+      "empty": "তোমার থলে তো খালি",
+      "cart_error": "আপনার কার্ট আপডেট করার সময় একটি ত্রুটি হয়েছে৷ অনুগ্রহপূর্বক আবার চেষ্টা করুন.",
+      "cart_quantity_error_html": "আপনি আপনার কার্টে এই আইটেমের শুধুমাত্র {{ quantity }} যোগ করতে পারেন৷",
+      "taxes_and_shipping_policy_at_checkout_html": "ট্যাক্স, ডিসকাউন্ট এবং <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">শিপিং<\/a> চেকআউট এ গণনা করা হয়",
+      "taxes_included_but_shipping_at_checkout": "ট্যাক্স অন্তর্ভুক্ত এবং শিপিং এবং ডিসকাউন্ট চেকআউট এ গণনা করা হয়",
+      "taxes_included_and_shipping_policy_html": "কর সংযুক্তি. <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">শিপিং<\/a> এবং ডিসকাউন্ট চেকআউট এ গণনা.",
+      "taxes_and_shipping_at_checkout": "ট্যাক্স, ডিসকাউন্ট এবং শিপিং চেকআউট এ গণনা করা হয়",
+      "headings": {
+        "product": "পণ্য",
+        "price": "দাম",
+        "total": "মোট",
+        "quantity": "পরিমাণ",
+        "image": "পণ্যের ছবি"
+      },
+      "update": "হালনাগাদ",
+      "login": {
+        "title": "একাউন্ট আছে?",
+        "paragraph_html": "দ্রুত চেক আউট করতে <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\" class=\"link underlined-link\">লগ ইন করুন<\/a> ."
+      }
+    },
+    "footer": {
+      "payment": "মুল্য পরিশোধ পদ্ধতি"
+    },
+    "featured_blog": {
+      "view_all": "সব দেখ",
+      "onboarding_title": "ব্লগ পোস্ট",
+      "onboarding_content": "আপনার গ্রাহকদের আপনার ব্লগ পোস্টের একটি সারসংক্ষেপ দিন"
+    },
+    "featured_collection": {
+      "view_all": "সব দেখ",
+      "view_all_label": "{{ collection_name }} সংগ্রহে সমস্ত পণ্য দেখুন৷"
+    },
+    "collection_list": {
+      "view_all": "সব দেখ"
+    },
+    "collection_template": {
+      "empty": "কোন পণ্য পাওয়া যায়নি",
+      "title": "সংগ্রহ",
+      "use_fewer_filters_html": "কম ফিল্টার ব্যবহার করুন বা <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;\/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">সব মুছে ফেলুন<\/a>"
+    },
+    "video": {
+      "load_video": "ভিডিও লোড করুন: {{ description }}"
+    },
+    "slideshow": {
+      "load_slide": "স্লাইড লোড করুন",
+      "previous_slideshow": "পূর্ববর্তী স্লাইড",
+      "next_slideshow": "পরবর্তী স্লাইড",
+      "pause_slideshow": "স্লাইডশো বিরতি",
+      "play_slideshow": "স্লাইডশো খেলুন",
+      "carousel": "ক্যারোসেল",
+      "slide": "স্লাইড"
+    },
+    "page": {
+      "title": "আমার স্নাতকের"
+    },
+    "quick_order_list": {
+      "product_total": "পণ্য সাবটোটাল",
+      "view_cart": "কার্ট দেখুন",
+      "each": "{{ money }} \/ea",
+      "product": "পণ্য",
+      "variant": "বৈকল্পিক",
+      "variant_total": "বৈকল্পিক মোট",
+      "items_added": {
+        "one": "{{ quantity }} আইটেম যোগ করা হয়েছে৷",
+        "other": "{{ quantity }} আইটেম যোগ করা হয়েছে৷"
+      },
+      "items_removed": {
+        "one": "{{ quantity }} আইটেম সরানো হয়েছে৷",
+        "other": "{{ quantity }} আইটেম সরানো হয়েছে৷"
+      },
+      "product_variants": "পণ্য বৈকল্পিক",
+      "total_items": "মোট আইটেম",
+      "remove_all_items_confirmation": "আপনার কার্ট থেকে সমস্ত {{ quantity }} আইটেম সরাতে চান?",
+      "remove_all": "সব মুছে ফেলুন",
+      "cancel": "বাতিল করুন"
+    }
+  },
+  "general": {
+    "password_page": {
+      "login_form_heading": "পাসওয়ার্ড ব্যবহার করে দোকানে প্রবেশ করুন:",
+      "login_password_button": "পাসওয়ার্ড ব্যবহার করে লিখুন",
+      "login_form_password_label": "পাসওয়ার্ড",
+      "login_form_password_placeholder": "আপনার পাসওয়ার্ড",
+      "login_form_error": "ভুল গুপ্তশব্দ!",
+      "login_form_submit": "প্রবেশ করুন",
+      "admin_link_html": "আপনি কি দোকানের মালিক? <a href=\"\/admin\" class=\"link underlined-link\">এখানে লগইন করুন<\/a>",
+      "powered_by_shopify_html": "এই দোকানটি {{ shopify }} দ্বারা চালিত হবে"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "ফেসবুকে ভাগ কেরো",
+        "share_on_twitter": "টুইটারে টুইট",
+        "share_on_pinterest": "Pinterest এ পিন করুন"
+      },
+      "links": {
+        "twitter": "টুইটার",
+        "facebook": "ফেসবুক"
+      }
+    }
   }
 }
