@@ -876,5 +876,108 @@
         "removed": "সরানো হয়েছে"
       }
     }
+  },
+  "customer": {
+    "log_in": "প্রবেশ করুন",
+    "log_out": "প্রস্থান",
+    "login_page": {
+      "cancel": "বাতিল করুন",
+      "create_account": "হিসাব তৈরি কর",
+      "email": "ইমেইল",
+      "forgot_password": "আপনি কি পাসওয়ার্ড ভুলে গেছেন?",
+      "guest_continue": "চালিয়ে যান",
+      "guest_title": "অতিথি হিসাবে চালিয়ে যান",
+      "password": "পাসওয়ার্ড",
+      "title": "প্রবেশ করুন",
+      "sign_in": "সাইন ইন করুন",
+      "submit": "জমা দিন"
+    },
+    "order": {
+      "title": "অর্ডার {{ name }}",
+      "date_html": "{{ date }} তারিখে স্থাপন করা হয়েছে",
+      "cancelled_html": "অর্ডার বাতিল করা হয়েছে {{ date }} তারিখে",
+      "cancelled_reason": "কারণ: {{ reason }}",
+      "billing_address": "বিলিং ঠিকানা",
+      "payment_status": "লেনদেনের অবস্থা",
+      "shipping_address": "প্রেরণের ঠিকানা",
+      "fulfillment_status": "পূর্ণতা স্থিতি",
+      "discount": "ছাড়",
+      "shipping": "পাঠানো",
+      "tax": "ট্যাক্স",
+      "product": "পণ্য",
+      "sku": "এসকেইউ",
+      "price": "দাম",
+      "quantity": "পরিমাণ",
+      "total": "মোট",
+      "total_refunded": "ফেরত দেওয়া হয়েছে",
+      "fulfilled_at_html": "পূরণ হয়েছে {{ date }}",
+      "track_shipment": "ট্রাকে পরিবহন করা",
+      "tracking_url": "ট্র্যাকিং লিঙ্ক",
+      "tracking_company": "বাহক",
+      "tracking_number": "ট্র্যাকিং নম্বর",
+      "subtotal": "সাবটোটাল",
+      "total_duties": "কর্তব্য"
+    },
+    "orders": {
+      "title": "অর্ডার ইতিহাস",
+      "order_number": "অর্ডার",
+      "order_number_link": "অর্ডার নম্বর {{ number }}",
+      "date": "তারিখ",
+      "payment_status": "লেনদেনের অবস্থা",
+      "fulfillment_status": "পূর্ণতা অবস্থা",
+      "total": "মোট",
+      "none": "আপনি এখনও কোনো অর্ডার স্থাপন করেননি."
+    },
+    "recover_password": {
+      "title": "আপনার পাসওয়ার্ড পুনরায় সেট করুন",
+      "subtext": "আপনার পাসওয়ার্ড রিসেট করার জন্য আমরা আপনাকে একটি ইমেল পাঠাব",
+      "success": "আমরা আপনাকে আপনার পাসওয়ার্ড আপডেট করার জন্য একটি লিঙ্ক সহ একটি ইমেল পাঠিয়েছি৷"
+    },
+    "register": {
+      "title": "হিসাব তৈরি কর",
+      "first_name": "নামের প্রথম অংশ",
+      "last_name": "নামের শেষাংশ",
+      "email": "ইমেইল",
+      "password": "পাসওয়ার্ড",
+      "submit": "সৃষ্টি"
+    },
+    "reset_password": {
+      "title": "অ্যাকাউন্টের পাসওয়ার্ড রিসেট করুন",
+      "subtext": "একটি নতুন পাসওয়ার্ড লিখুন",
+      "password": "পাসওয়ার্ড",
+      "password_confirm": "পাসওয়ার্ড নিশ্চিত করুন",
+      "submit": "পাসওয়ার্ড রিসেট করুন"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "how_to_use_gift_card": "উপহার কার্ড কোড অনলাইন বা QR কোড ইন স্টোর ব্যবহার করুন",
+      "title": "এই হল {{ shop }} এর জন্য আপনার {{ value }} উপহার কার্ডের ব্যালেন্স!",
+      "subtext": "আপনার উপহার কার্ড",
+      "gift_card_code": "উপহার কার্ড কোড",
+      "shop_link": "অনলাইন দোকানে যান",
+      "add_to_apple_wallet": "অ্যাপল ওয়ালেটে যোগ করুন",
+      "qr_image_alt": "QR কোড — উপহার কার্ড রিডিম করতে স্ক্যান করুন",
+      "copy_code": "উপহার কার্ডের কোড কপি করুন",
+      "expiration_date": "মেয়াদ শেষ হবে {{ expires_on }}",
+      "copy_code_success": "কোড সফলভাবে অনুলিপি করা হয়েছে",
+      "expired": "মেয়াদোত্তীর্ণ"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "আমি এটি একটি উপহার হিসাবে পাঠাতে চাই",
+      "expanded": "উপহার কার্ড প্রাপক ফর্ম প্রসারিত",
+      "collapsed": "উপহার কার্ড প্রাপকের ফর্ম আড়াল করা হয়েছে৷",
+      "email_label": "প্রাপক ই - মেইল",
+      "email_label_optional_for_no_js_behavior": "প্রাপকের ইমেল (ঐচ্ছিক)",
+      "email": "ইমেইল",
+      "name_label": "প্রাপকের নাম (ঐচ্ছিক)",
+      "name": "নাম",
+      "message_label": "বার্তা (ঐচ্ছিক)",
+      "message": "বার্তা",
+      "max_characters": "সর্বোচ্চ {{ max_chars }} অক্ষর",
+      "send_on_label": "পাঠান (ঐচ্ছিক)"
+    }
   }
 }
