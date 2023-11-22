@@ -2238,6 +2238,44 @@
       "password": "পাসওয়ার্ড",
       "password_confirm": "পাসওয়ার্ড নিশ্চিত করুন",
       "submit": "পাসওয়ার্ড রিসেট করুন"
+    },
+    "account": {
+      "title": "হিসাব",
+      "details": "বিস্তারিত হিসাব",
+      "view_addresses": "ঠিকানা দেখুন",
+      "return": "অ্যাকাউন্টের বিবরণে ফিরে যান"
+    },
+    "account_fallback": "হিসাব",
+    "activate_account": {
+      "title": "অ্যাকাউন্ট সক্রিয়",
+      "subtext": "আপনার অ্যাকাউন্ট সক্রিয় করতে আপনার পাসওয়ার্ড তৈরি করুন.",
+      "password": "পাসওয়ার্ড",
+      "password_confirm": "পাসওয়ার্ড নিশ্চিত করুন",
+      "submit": "অ্যাকাউন্ট সক্রিয়",
+      "cancel": "আমন্ত্রণ প্রত্যাখ্যান করুন"
+    },
+    "addresses": {
+      "title": "ঠিকানা",
+      "default": "ডিফল্ট",
+      "add_new": "একটি নতুন ঠিকানা যোগ করুন",
+      "edit_address": "ঠিকানা সম্পাদনা করুন",
+      "first_name": "নামের প্রথম অংশ",
+      "last_name": "নামের শেষাংশ",
+      "company": "প্রতিষ্ঠান",
+      "address1": "ঠিকানা 1",
+      "address2": "ঠিকানা ২",
+      "city": "শহর",
+      "country": "দেশ\/অঞ্চল",
+      "province": "প্রদেশ",
+      "zip": "পোস্টকোড \/ জিপকোড",
+      "phone": "ফোন",
+      "set_default": "ডিফল্ট ঠিকানা হিসেবে সেট করুন",
+      "add": "ঠিকানা যোগ করুন",
+      "update": "ঠিকানা আপডেট করুন",
+      "cancel": "বাতিল করুন",
+      "edit": "সম্পাদনা করুন",
+      "delete": "মুছে ফেলা",
+      "delete_confirm": "আপনি কি নিশ্চিত আপনি এই ঠিকানা মুছে ফেলতে চান?"
     }
   },
   "gift_cards": {
@@ -2270,5 +2308,113 @@
       "max_characters": "সর্বোচ্চ {{ max_chars }} অক্ষর",
       "send_on_label": "পাঠান (ঐচ্ছিক)"
     }
+  },
+  "products": {
+    "product": {
+      "price": {
+        "sale_price": "বিক্রয় মূল্য",
+        "unit_price": "একক দাম"
+      },
+      "share": "এই পণ্য শেয়ার করুন",
+      "sold_out": "বিক্রি শেষ",
+      "unavailable": "অনুপলব্ধ",
+      "vendor": "বিক্রেতা",
+      "value_unavailable": "{{ option_value }} - অনুপলব্ধ৷",
+      "variant_sold_out_or_unavailable": "ভেরিয়েন্ট বিক্রি হয়ে গেছে বা অনুপলব্ধ",
+      "video_exit_message": "{{ title }} একই উইন্ডোতে পূর্ণ স্ক্রীন ভিডিও খোলে৷",
+      "view_full_details": "সম্পূর্ণ বিবরণ দেখুন",
+      "xr_button": "আপনার স্থান দেখুন",
+      "xr_button_label": "আপনার স্পেসে দেখুন, অগমেন্টেড রিয়েলিটি উইন্ডোতে আইটেম লোড করুন",
+      "include_taxes": "কর সংযুক্তি.",
+      "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">শিপিং<\/a> চেকআউট এ গণনা."
+    },
+    "modal": {
+      "label": "মিডিয়া গ্যালারি"
+    },
+    "facets": {
+      "apply": "আবেদন করুন",
+      "clear": "পরিষ্কার",
+      "clear_all": "সব মুছে ফেলুন",
+      "from": "থেকে",
+      "filter_and_sort": "ফিল্টার এবং সাজান",
+      "filter_by_label": "ছাঁকনি:",
+      "filter_button": "ছাঁকনি",
+      "filters_selected": {
+        "one": "{{ count }} নির্বাচিত৷",
+        "other": "{{ count }} নির্বাচিত৷"
+      },
+      "filter_selected_accessibility": "{{ type }} ( {{ count }} ফিল্টার নির্বাচিত)",
+      "show_more": "আরো দেখুন",
+      "show_less": "প্রদর্শন কম",
+      "max_price": "সর্বোচ্চ দাম হল {{ price }}",
+      "product_count": {
+        "one": "{ {{ count }} {{ product_count }}",
+        "other": "{ {{ count }} {{ product_count }}"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} পণ্য",
+        "other": "{{ count }} পণ্য"
+      },
+      "reset": "রিসেট",
+      "sort_button": "সাজান",
+      "sort_by_label": "ক্রমানুসার:",
+      "to": "প্রতি",
+      "clear_filter": "ফিল্টার সরান"
+    }
+  },
+  "templates": {
+    "search": {
+      "no_results": "“ {{ terms }} ”-এর জন্য কোনো ফলাফল পাওয়া যায়নি। বানান পরীক্ষা করুন বা একটি ভিন্ন শব্দ বা বাক্যাংশ ব্যবহার করুন।",
+      "page": "পাতা",
+      "products": "পণ্য",
+      "results_pages_with_count": {
+        "one": "{{ count }} পৃষ্ঠা",
+        "other": "{{ count }} পৃষ্ঠা"
+      },
+      "results_suggestions_with_count": {
+        "one": "{{ count }} পরামর্শ",
+        "other": "{{ count }} টি পরামর্শ৷"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} পণ্য",
+        "other": "{{ count }} পণ্য"
+      },
+      "results_with_count": {
+        "one": "{{ count }} ফলাফল",
+        "other": "{{ count }} ফলাফল"
+      },
+      "results_with_count_and_term": {
+        "one": "“ {{ terms }} ” এর জন্য {{ count }} ফলাফল পাওয়া গেছে",
+        "other": "“ {{ terms }} ” এর জন্য {{ count }} ফলাফল পাওয়া গেছে"
+      },
+      "title": "অনুসন্ধান ফলাফল",
+      "search_for": "\" {{ terms }} \" অনুসন্ধান করুন",
+      "suggestions": "পরামর্শ",
+      "pages": "পাতা"
+    },
+    "cart": {
+      "cart": "কার্ট"
+    },
+    "contact": {
+      "form": {
+        "title": "যোগাযোগ ফর্ম",
+        "name": "নাম",
+        "email": "ইমেইল",
+        "phone": "ফোন নম্বর",
+        "comment": "মন্তব্য করুন",
+        "send": "পাঠান",
+        "post_success": "আমাদের সাথে যোগাযোগ করার জন্য ধন্যবাদ. আমরা যত তাড়াতাড়ি সম্ভব আপনার কাছে ফিরে আসব।",
+        "error_heading": "নিম্নলিখিত সামঞ্জস্য করুন:"
+      }
+    },
+    "404": {
+      "title": "পৃষ্ঠা খুঁজে পাওয়া যায়নি"
+    }
+  },
+  "localization": {
+    "country_label": "দেশ\/অঞ্চল",
+    "language_label": "ভাষা",
+    "update_language": "ভাষা আপডেট করুন",
+    "update_country": "দেশ\/অঞ্চল আপডেট করুন"
   }
 }
