@@ -1640,7 +1640,16 @@
           "credit_card_number_invalid": "একটি বৈধ কার্ড নম্বর লিখুন",
           "credit_card_expiry_invalid": "একটি বৈধ কার্ডের মেয়াদ শেষ হওয়ার তারিখ লিখুন",
           "credit_card_verification_value_blank": "আপনার কার্ডে CVV বা নিরাপত্তা কোড লিখুন"
-        }
+        },
+        "card_number_label": "কার্ড নম্বর",
+        "card_number_placeholder": "কার্ড নম্বর",
+        "name_on_card_label": "কার্ডের ওপর নাম",
+        "name_on_card_placeholder": "কার্ডের ওপর নাম",
+        "card_expiry_label": "মেয়াদ শেষ হওয়ার তারিখ (MM\/YY)",
+        "card_expiry_placeholder": "মেয়াদ শেষ হওয়ার তারিখ (MM\/YY)",
+        "card_verification_value_label": "নিরাপত্তা কোড",
+        "card_verification_value_placeholder": "নিরাপত্তা কোড",
+        "card_start_label": "ইস্যু তারিখ (MM\/YY)"
       },
       "payment_delete": {
         "title": "অর্থপ্রদানের পদ্ধতি মুছুন",
@@ -1677,6 +1686,76 @@
           "missing_billing_address_error_message": "একটি বিলিং ঠিকানা উল্লেখ করুন",
           "default_checkbox": "ডিফল্ট অর্থপ্রদানের পদ্ধতি হিসাবে সেট করুন"
         }
+      },
+      "title": "মুল্য পরিশোধ পদ্ধতি",
+      "add_payment_method_button": "অর্থপ্রদানের পদ্ধতি যোগ করুন",
+      "add_payment_method_banner": "দ্রুত চেকআউট বা প্রাক-অনুমোদিত পরিষেবার জন্য অর্থপ্রদানের পদ্ধতি যোগ করুন",
+      "no_payment_methods_banner": "কোনো পেমেন্ট পদ্ধতি যোগ করা হয়নি",
+      "edit_payment_method_button_accessibility_label": "{ {{lastDigits}} {{paymentMethodName}} } সম্পাদনা করুন",
+      "edit_payment_method_brand_button_accessibility_label": "সম্পাদনা করুন {{paymentMethodName}}",
+      "delete_payment_method_button": "মুছে ফেলা",
+      "delete_payment_method_button_accessibility_label": "মুছুন {{paymentMethodName}}",
+      "back_button": "পেছনে",
+      "back_button_accessibility_label": "{{paymentMethodStepTitle}} এ ফিরে যান",
+      "default": "ডিফল্ট",
+      "generic_card": "কার্ড",
+      "expiration_warning_button_accessibility_label": "{{lastDigits}} -এ শেষ হওয়া {{paymentMethodName}} এর মেয়াদ শেষ হওয়ার সতর্কতা দেখান",
+      "expires_soon": "এই কার্ডের মেয়াদ শীঘ্রই শেষ হচ্ছে",
+      "expired": "এই কার্ডের মেয়াদ শেষ",
+      "card_update_consent": "এই অর্থপ্রদানের পদ্ধতি ভবিষ্যতের কেনাকাটার জন্য সংরক্ষণ করা হবে।",
+      "digital_wallet_title": "ডিজিটাল ওয়ালেট",
+      "credit_or_debit_card_title": "ক্রেডিট অথবা ডেবিট কার্ড",
+      "google_pay": {
+        "loading": "Google Pay লোড হচ্ছে",
+        "errors": {
+          "generic": "Google Pay-তে সমস্যা হয়েছে। আবার চেষ্টা করুন বা অন্য কোনো পেমেন্ট পদ্ধতি ব্যবহার করুন।",
+          "missing_billing_address": "Google Pay-এর জন্য একটি বিলিং ঠিকানা প্রয়োজন। আপনার অ্যাকাউন্টে একটি যোগ করুন."
+        }
+      },
+      "apple_pay": {
+        "loading": "অ্যাপল পে লোড হচ্ছে",
+        "errors": {
+          "generic": "অ্যাপল পে এর সাথে একটি সমস্যা ছিল। আবার চেষ্টা করুন বা অন্য কোনো পেমেন্ট পদ্ধতি ব্যবহার করুন।",
+          "not_available": "অ্যাপল পে এই ডিভাইসে উপলব্ধ নেই।",
+          "missing_billing_address": "Apple Pay-এর জন্য একটি বিলিং ঠিকানা প্রয়োজন৷ আপনার অ্যাকাউন্টে একটি যোগ করুন."
+        }
+      },
+      "payment_details": {
+        "title": "পেমেন্ট পদ্ধতির বিশদ বিবরণ",
+        "credit_card_details_accessibility_label": "{{lastDigits}} এ শেষ",
+        "billing_title": "বিলিং ঠিকানা",
+        "card_info_title": "কার্ড তথ্য",
+        "payment_method_expiring_on": "মেয়াদ শেষ হচ্ছে {{expiryDate}} তারিখে",
+        "payment_method_expired_on": "{{expiryDate}} তারিখে মেয়াদ শেষ হয়েছে",
+        "preauthorized_payments": "প্রাক-অনুমোদিত অর্থপ্রদান",
+        "close_payment_modal": "বন্ধ",
+        "close_payment_modal_accessibility_label": "পেমেন্ট পদ্ধতির বিবরণ মোডাল বন্ধ করুন",
+        "payment_method_not_found_error": "অর্থপ্রদানের পদ্ধতি খুঁজে পাওয়া যায়নি",
+        "payment_details_loading": "অর্থপ্রদান পদ্ধতির বিশদ বিবরণ লোড হচ্ছে",
+        "pre_authorized_payments": "প্রাক-অনুমোদিত অর্থপ্রদান",
+        "total_amount_of_subscription_line_items_left": "এবং আরও {{total}}",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "মোট {{totalItems}} টি আইটেম, {{totalItemsToDisplay}} টি আইটেম প্রদর্শন করছে।",
+        "next_payment_due": "পরবর্তী পেমেন্ট বাকি {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "সম্পাদনা করুন",
+        "edit_payment_method_button_accessibility_label": "{{lastDigits}} দিয়ে শেষ হওয়া অর্থপ্রদানের পদ্ধতি সম্পাদনা করুন",
+        "loading_shop_pay": "দোকান বেতন লোড হচ্ছে",
+        "invalid_payment_method": "অবৈধ অর্থপ্রদানের পদ্ধতি",
+        "invalid_payment_method_message": "আসন্ন অর্ডার গ্রহণ চালিয়ে যেতে একটি নতুন ক্রেডিট কার্ড ব্যবহার করুন।",
+        "replace_payment_method": "অর্থপ্রদানের পদ্ধতি প্রতিস্থাপন করুন",
+        "checkout_card_banner": "এই অর্থপ্রদানের পদ্ধতি শুধুমাত্র প্রাক-অনুমোদিত অর্থপ্রদানের জন্য ব্যবহার করা যেতে পারে। আপনি যদি এই দোকানে লগ ইন করেন তবে চেকআউটে এটি প্রদর্শিত হবে না৷",
+        "default_checkbox": "ডিফল্ট হিসেবে সেট করুন",
+        "default_checkbox_accessibility_label": "এই পেমেন্ট পদ্ধতিটি ডিফল্ট হিসাবে সেট করুন"
+      },
+      "edit_payment_method": {
+        "title": "অর্থপ্রদানের পদ্ধতি সম্পাদনা করুন",
+        "save_payment_method_button": "সংরক্ষণ",
+        "cancel_edit_payment_method_button": "বাতিল করুন",
+        "payment_method_updated_toast": "পেমেন্ট পদ্ধতি আপডেট করা হয়েছে",
+        "billing_address": "বিলিং ঠিকানা",
+        "billing_address_add_new": "নতুন যোগ করুন",
+        "billing_address_choose_from_list": "তালিকা থেকে চয়ন করুন",
+        "future_purchases_notice": "এই অর্থপ্রদানের পদ্ধতি ভবিষ্যতের কেনাকাটার জন্য সংরক্ষণ করা হবে।",
+        "generic_error": "আপডেট করতে সমস্যা হয়েছে৷ অনুগ্রহপূর্বক আবার চেষ্টা করুন."
       }
     },
     "payment_method_brands": {
@@ -1745,6 +1824,71 @@
       "showPreviousMonth": "আগের মাস দেখান, {{month}} {{year}}",
       "rangeStart": "পরিসীমা শুরু",
       "inRange": "সীমার মধ্যে"
+    },
+    "B2B": {
+      "purchase_order_number": {
+        "close_modal_accessibility_label": "PO নম্বর মডেল বন্ধ করুন",
+        "discard": "বাতিল করা",
+        "discard_changes_modal_title": "পরিবর্তন বাতিল?",
+        "edit_accessibility_label": "PO নম্বর সম্পাদনা করুন",
+        "edit_modal_title": "PO নম্বর সম্পাদনা করুন",
+        "empty_state": "পিও নম্বর নেই",
+        "modal_po_number_input_label": "পি ও নম্বর",
+        "modal_po_number_input_max_length_error": "PO সংখ্যায় সর্বাধিক {{maxLength}} অক্ষর থাকে৷",
+        "save": "সংরক্ষণ",
+        "title": "PO # {{poNumber}}"
+      }
+    },
+    "errors": {
+      "address_deletion_error": {
+        "description": "এই ঠিকানাটি মুছে ফেলার সময় একটি সমস্যা হয়েছে৷ আবার চেষ্টা করুন বা পৃষ্ঠাটি রিফ্রেশ করুন।"
+      },
+      "addresses_loading_issue": {
+        "description": "সংযোগ ত্রুটি. আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন এবং আবার চেষ্টা করুন।"
+      },
+      "banner_title": {
+        "one": "{{count}} ত্রুটি আছে",
+        "other": "{{count}} টি ত্রুটি আছে৷"
+      },
+      "failed_address_creation": {
+        "description": "আপনার ঠিকানা তৈরিতে একটি সমস্যা হয়েছে৷ এই পৃষ্ঠাটি রিফ্রেশ করার চেষ্টা করুন বা আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন৷"
+      },
+      "failed_address_update": {
+        "description": "আপনার ঠিকানা আপডেট করতে একটি সমস্যা হয়েছে৷ এই পৃষ্ঠাটি রিফ্রেশ করার চেষ্টা করুন বা আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন৷"
+      },
+      "load_orders_error": {
+        "title": "অর্ডার লোড করতে অক্ষম",
+        "description": "আবার চেষ্টা করুন বা পরে ফিরে আসুন।",
+        "retry_button": "পুনরায় চেষ্টা করা"
+      },
+      "load_paypal_error": {
+        "description": "PayPal লোড করার সময় একটি সমস্যা হয়েছে। অনুগ্রহপূর্বক আবার চেষ্টা করুন."
+      },
+      "no_access": {
+        "back_to_authentication_link": "একটি ভিন্ন অ্যাকাউন্টে লগ ইন করুন",
+        "description": "আপনি {{shopName}} -এর সাথে B2B গ্রাহক হিসাবে নিবন্ধিত নন",
+        "title": "প্রবেশধিকার নেই"
+      },
+      "no_access_to_locations": {
+        "description": "আপনার কোনো অবস্থানে অ্যাক্সেস নেই৷"
+      },
+      "not_found": {
+        "description": "URL চেক করুন বা কয়েক মিনিটের মধ্যে আবার চেষ্টা করুন।",
+        "title": "এই পৃষ্ঠাটি লোড করার সময় একটি সমস্যা হয়েছে৷"
+      },
+      "order_not_found": {
+        "description": "এই অর্ডারটি বিদ্যমান নেই বা আপনার কাছে এটি দেখার অনুমতি নেই৷",
+        "title": "অর্ডার পাওয়া যায়নি"
+      },
+      "profile_update_error": {
+        "description": "আপনার প্রোফাইল আপডেট করতে একটি সমস্যা হয়েছে৷ এই পৃষ্ঠাটি রিফ্রেশ করার চেষ্টা করুন বা আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন৷"
+      },
+      "retry_action_label": "পুনরায় চেষ্টা করা",
+      "load_extension_error": {
+        "title": "ত্রুটি",
+        "description": "এই পৃষ্ঠাটি রিফ্রেশ করুন বা কয়েক মিনিটের মধ্যে আবার চেষ্টা করুন৷",
+        "refresh_button": "সতেজ পৃষ্ঠা"
+      }
     }
   },
   "customer": {
