@@ -271,7 +271,79 @@
         "price_label": "দাম",
         "price_per_item": {
           "accessibility_label": "%{Price (প্রতি আইটেম"
-        }
+        },
+        "quantity_label": "পরিমাণ",
+        "product_change_label": "পরিবর্তন",
+        "product_image_label": "পণ্যের ছবি",
+        "scroll_order_summary": "আরো আইটেম জন্য স্ক্রোল",
+        "expand_order_summary_short": "দেখান",
+        "collapse_order_summary_short": "লুকান",
+        "expand_order_summary": "অর্ডার সারাংশ দেখান",
+        "collapse_order_summary": "অর্ডার সারাংশ লুকান",
+        "original_price": "মূল দাম",
+        "sale_price": "বিক্রয় মূল্য",
+        "total_updated_label": "আপডেট করা মোট মূল্য:",
+        "order_total_updated_label": "মোট আপডেট করা হয়েছে",
+        "total_already_paid_label": "ইতোমধ্যে পরিশোধিত",
+        "unit_price": {
+          "accessible_separator": "প্রতি"
+        },
+        "gift_card_ending": "%{last_characters} দিয়ে শেষ হওয়া উপহার কার্ড",
+        "estimated_tax_label": "আনুমানিক ট্যাক্স",
+        "multiple_shipping_lines_label": "মোট শিপিং",
+        "recurring_subtotal_label": "পুনরাবৃত্ত সাবটোটাল",
+        "recurring_total_label": "পুনরাবৃত্ত মোট",
+        "recurring_total_tooltip": "শিপিং, ট্যাক্স, শুল্ক বা কোনো প্রযোজ্য ডিসকাউন্ট অন্তর্ভুক্ত করে না।",
+        "confirmation_number_label": "নিশ্চিতকরণ #%{confirmation_number}",
+        "higher_value_discount_applied": "আপনার বিদ্যমান ডিসকাউন্টের সাথে <strong style=\"text-transform:uppercase\">%{code}<\/strong> ব্যবহার করা যাবে না।",
+        "percent_off_shipping": "শিপিংয়ে %{percent}% ছাড়৷",
+        "amount_off_shipping": "শিপিংয়ে %{amount} ছাড়৷",
+        "deferred_payment_info": {
+          "title": "%{amount_due}-এর পেমেন্ট %{due_at} তারিখে বাকি আছে",
+          "description_html": "আপনার অর্ডার সম্পর্কে প্রশ্নের জন্য, %{contact_us}।",
+          "paid_today": "আজ মোট অর্থ প্রদান করা হয়েছে",
+          "due_on_fulfillment_title": "%{amount_due}-এর পেমেন্ট পূরণের জন্য বকেয়া",
+          "due_on_receipt_title": "%{amount_due}-এর পেমেন্ট রসিদ হওয়ার পরে"
+        },
+        "payment_terms_totals": {
+          "due_today": "আজ মোট বকেয়া",
+          "due_later": "মোট বকেয়া %{due_at}",
+          "due_on_fulfillment": "পূরণের উপর মোট বকেয়া",
+          "due_on_receipt": "প্রাপ্তির উপর মোট বকেয়া",
+          "due_later_checkout_to_draft": "পরে মোট বকেয়া"
+        },
+        "maximum_discount_code_limit_reached": "আপনি ডিসকাউন্ট কোডের সর্বাধিক সংখ্যায় পৌঁছেছেন৷ <strong style=\"text-transform:uppercase\">%{code}<\/strong> ব্যবহার করতে একটি বিদ্যমান কোড সরান।",
+        "discount_code_application_failed": "<strong style=\"text-transform:uppercase\">%{code}<\/strong> এখন কাজ করছে না। সাহায্যের জন্য আমাদের সাথে যোগাযোগ করুন.",
+        "due_on_fulfillment": "পূর্ণতার উপর বকেয়া",
+        "subscriptions": "সদস্যতা",
+        "duties_label": "কর্তব্য",
+        "duties_and_taxes_label": "কর্তব্য এবং কর",
+        "error_duties_tooltip": "এই অর্ডার অন্য দেশ থেকে পাঠানো হচ্ছে, তাই শুল্ক এবং ট্যাক্স ডেলিভারি চার্জ করা হতে পারে.",
+        "may_be_charged_on_delivery": "ডেলিভারি চার্জ করা হতে পারে",
+        "total_updated_label_with_price": "আপডেট করা মোট মূল্য: %{totalPrice}",
+        "updated_shipping_method": "আপডেট করা শিপিং পদ্ধতি: %{shipping_method}",
+        "recurring_payments": "আবর্তক পেমেন্ট",
+        "recurring_total_multiple_label": "এই অর্ডারে একাধিক আইটেমের জন্য একটি পুনরাবৃত্ত চার্জ রয়েছে৷",
+        "deferred_total_due_date_label": "মোট বকেয়া {{date}}",
+        "full_price": "সম্পূর্ণ মূল্য: %{price}",
+        "custom_discount": "কাস্টম ডিসকাউন্ট",
+        "expand_component_information": {
+          "one": "%{count} আইটেম দেখান",
+          "other": "%{count}টি আইটেম দেখান"
+        },
+        "collapse_component_information": {
+          "one": "%{count} আইটেম লুকান",
+          "other": "%{count}টি আইটেম লুকান"
+        },
+        "component_quantity_title": "%{পরিমাণ} × %{product_title}",
+        "discount_discovery": {
+          "add_code": "ডিসকাউন্ট যোগ করুন",
+          "merchandise_quantity_label": {
+            "one": "%{count}টি আইটেম",
+            "other": "%{count}টি আইটেম"
+          }
+        },
+        "alternative_payment_currency_total": "%{amount_due} হিসাবে চার্জ করা হয়েছে"
       },
       "payment": {
         "pending_payment": {
@@ -575,6 +647,48 @@
             "one": "দিন"
           }
         }
+      },
+      "shipping": {
+        "title": "ডেলিভারি",
+        "shipping_method_title": "পরিবহণ মাধ্যম",
+        "shipping_method_one_time_purchase_group_title": "এককালীন কেনাকাটা",
+        "shipping_method_subscription_group_title": "সাবস্ক্রিপশন",
+        "subscription_shipping": "সাবস্ক্রিপশন শিপিং",
+        "subscription_local_delivery": "সদস্যতা স্থানীয় বিতরণ",
+        "subscription_pickup": "সাবস্ক্রিপশন পিকআপ",
+        "waiting_on_rate_notice": "উপলব্ধ শিপিং রেট পাওয়া যাচ্ছে...",
+        "waiting_on_pickup_location_notice": "উপলব্ধ পিক আপ অবস্থান পাওয়া যাচ্ছে...",
+        "no_rates_for_cart_or_destination_notice": "আপনার কার্ট বা ঠিকানার জন্য কোন শিপিং পদ্ধতি উপলব্ধ নেই",
+        "no_pickup_location_notice": "আপনার পণ্যগুলির মধ্যে অন্তত একটি পিক আপের জন্য উপলব্ধ নয়৷",
+        "no_rates_for_country_notice": "এই ঠিকানার জন্য কোন শিপিং হার পাওয়া যায়নি.",
+        "no_rates_contact_notice": "আরও তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন",
+        "free_rate_label": "বিনামূল্যে",
+        "cheapest_rate_label": "সবচেয়ে সস্তা",
+        "please_enter_your_shipping_information_notice": "আপনার শিপিং তথ্য লিখুন.",
+        "estimated_delivery_date": {
+          "one": "%{count} ব্যবসায়িক দিন",
+          "other": "%{count} ব্যবসায়িক দিন"
+        },
+        "estimated_delivery_date_range": "%{মিনিমাম} থেকে %{সর্বোচ্চ} ব্যবসায়িক দিন",
+        "estimated_delivery_time": "আনুমানিক ডেলিভারি সময়}",
+        "estimated_delivery_time_range": "আনুমানিক ডেলিভারি %{min_time}–%{max_time}",
+        "delivery_today": "একই দিনে ডেলিভারি %{time}",
+        "delivery_tomorrow": "পরের দিন ডেলিভারি %{time}",
+        "two_day_delivery": "2-দিনের ডেলিভারি %{time}",
+        "delivery": "ডেলিভারি %{time}",
+        "arrives_time": "পৌঁছাবে %{time}",
+        "arrives_time_range": "পৌঁছাবে %{min_time}–%{max_time}",
+        "estimated_time": "আনুমানিক সময়}",
+        "estimated_time_range": "আনুমানিক %{min_time}–%{max_time}",
+        "shipping_line_phone_label": "মোবাইল ফোন নম্বর (প্রয়োজনীয়)",
+        "shipping_line_phone": "আপনার কুরিয়ার আপনার সাথে যোগাযোগ করতে এই নম্বর ব্যবহার করতে পারে.",
+        "shipping_line_delivery_phone_label": "মোবাইল ফোন নম্বর",
+        "shipping_line_delivery_phone": "আপনার ডেলিভারির আপডেটের সাথে আপনার সাথে যোগাযোগ করা হতে পারে।",
+        "split_cart_merchandise_quantity_label_standard": "%{পরিমাণ} আইটেম",
+        "split_cart_merchandise_quantity_label_additional": "+%{পরিমাণ} আরও",
+        "split_cart_merchandise_shipment_number": "%{total} এর %{number} চালান",
+        "split_cart_ships_now": "এখন জাহাজ",
+        "split_cart_ships_later": "পরে জাহাজ"
       }
     },
     "notices": {
@@ -736,8 +850,32 @@
         "hide_accessibility_label": "অ্যাকাউন্ট মেনু লুকান",
         "label": "হিসাব",
         "show_accessibility_label": "অ্যাকাউন্ট মেনু দেখান",
-        "nav_accessibility_label": "অ্যাকাউন্ট নেভিগেশন"
-      }
+        "nav_accessibility_label": "অ্যাকাউন্ট নেভিগেশন",
+        "open_menu_accessibility_label": "অ্যাকাউন্ট নেভিগেশন খুলুন",
+        "close_menu_accessibility_label": "অ্যাকাউন্ট নেভিগেশন বন্ধ করুন",
+        "loading_message": "অ্যাকাউন্ট নেভিগেশন লোড হচ্ছে"
+      },
+      "action_menu_accessibility_label": "আরও কাজ",
+      "close_menu_accessibility_label": "প্রধান নেভিগেশন বন্ধ করুন",
+      "contact_email_subject": "{{shopName}} অনলাইন স্টোর থেকে যোগাযোগ করুন",
+      "contact_link": "যোগাযোগ করুন",
+      "delete_confirmation": {
+        "cancel": "বাতিল করুন",
+        "delete": "মুছে ফেলা"
+      },
+      "dismiss_toast": "খারিজ",
+      "document_title": "{{sectionName}} - {{shopName}} - অ্যাকাউন্ট",
+      "go_to_store_link": "দোকানে যাও",
+      "loading_message": "লোড হচ্ছে",
+      "log_out_link": "প্রস্থান",
+      "logout_overlay_label": "আপনাকে লগ আউট করা হচ্ছে...",
+      "nav_label_accessibility_label": "প্রধান নেভিগেশান",
+      "navigation_accessibility_message": "আপনি {{sectionName}} -এ নেভিগেট করেছেন",
+      "open_menu_accessibility_label": "প্রধান নেভিগেশন খুলুন",
+      "orders_link_label": "আদেশ",
+      "shop_logo_accessibility_label": "{{shopName}} লোগো",
+      "subscriptions_link_label": "সদস্যতা",
+      "settings_link": "সেটিংস"
     },
     "orders": {
       "order_status": {
@@ -764,7 +902,87 @@
         "other": "যদি তারা গ্রহণ না করা হয়,"
       },
       "let_us_know": "আমাদের জানতে দাও",
-      "contact_us": "যোগাযোগ করুন."
+      "contact_us": "যোগাযোগ করুন.",
+      "list_layout_accessibility_label": "লেআউট বিকল্প",
+      "list_title": "আদেশ",
+      "order_list": {
+        "column_headers": {
+          "order": "অর্ডার",
+          "items": "আইটেম",
+          "total": "মোট"
+        },
+        "delivered": "বিতরণ করা হয়েছে {{date}}",
+        "empty_state_order_source_description": "শুধুমাত্র {{email}} দ্বারা দেওয়া অর্ডারগুলি এখানে দেখাবে৷",
+        "empty_state_subtitle": "একটি অর্ডার দিতে দোকান যান.",
+        "empty_state_title": "এখনও কোন আদেশ নেই",
+        "empty_state_title_for_pending_orders": "কোন মুলতুবি আদেশ",
+        "estimated_shortform": "অনুমান। {{date}}",
+        "estimated_delivery": "সম্ভাব্য প্রসব {{date}}",
+        "one_images_accessibility_label": "অর্ডারের মধ্যে রয়েছে {{lineItemName1}}",
+        "two_images_accessibility_label": "অর্ডারের মধ্যে রয়েছে {{lineItemName1}} , {{lineItemName2}}",
+        "three_images_accessibility_label": "অর্ডারের মধ্যে রয়েছে {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}}",
+        "four_images_accessibility_label": "অর্ডারের মধ্যে রয়েছে {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "অর্ডারে {{lineItemName1}} , {{lineItemName2}} , এবং আরও {{numberOfAdditionalProducts}} টি পণ্য রয়েছে",
+        "more_than_four_products_accessibility_label": "অর্ডারের মধ্যে রয়েছে {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , এবং {{numberOfAdditionalProducts}} আরও পণ্য",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} টি পণ্য",
+        "carousel": {
+          "one_products_accessibility_label": "অর্ডারে রয়েছে {{lineItemName1}} পরিমাণ {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "অর্ডারের মধ্যে রয়েছে {{lineItemName1}} পরিমাণ {{lineItemQuantity1}} , {{lineItemName2}} পরিমাণ {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "অর্ডারে {{lineItemName1}} পরিমাণ {{lineItemQuantity1}} , {{lineItemName2}} পরিমাণ {{lineItemQuantity2}} , {{lineItemName3}} পরিমাণ {{lineItemQuantity3}} অন্তর্ভুক্ত",
+          "four_products_accessibility_label": "অর্ডারের মধ্যে রয়েছে {{lineItemName1}} পরিমাণ {{lineItemQuantity1}} , {{lineItemName2}} পরিমাণ {{lineItemQuantity2}} , {{lineItemName3}} পরিমাণ {{lineItemQuantity3}} , {{lineItemName4}} Item {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "অর্ডারের মধ্যে রয়েছে {{lineItemName1}} পরিমাণ {{lineItemQuantity1}} , {{lineItemName2}} পরিমাণ {{lineItemQuantity2}} , {{lineItemName3}} পরিমাণ {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}} পরিমাণ {{lineItemName5}} পরিমাণ {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "অর্ডারের মধ্যে রয়েছে {{lineItemName1}} পরিমাণ {{lineItemQuantity1}} , {{lineItemName2}} পরিমাণ {{lineItemQuantity2}} , {{lineItemName3}} পরিমাণ {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}} পরিমাণ {{lineItemName5}} পরিমাণ {{lineItemQuantity5}} , {{lineItemName6}} পরিমাণ {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "অর্ডারের মধ্যে রয়েছে {{lineItemName1}} পরিমাণ {{lineItemQuantity1}} , {{lineItemName2}} পরিমাণ {{lineItemQuantity2}} , {{lineItemName3}} পরিমাণ {{lineItemQuantity3}} , {{lineItemName4}} {{lineItemQuantity4}} পরিমাণ {{lineItemName5}} পরিমাণ {{lineItemQuantity5}} , {{lineItemName6}} পরিমাণ {{lineItemQuantity6}} এবং আরও অনেক কিছু",
+          "view_order_details": "বিস্তারিত নির্দেশিকা দেখো",
+          "previous": "আগে",
+          "next": "পরবর্তী"
+        },
+        "items": {
+          "one": "{{count}} টি আইটেম",
+          "other": "{{count}} টি আইটেম"
+        },
+        "list_view": "তালিকার দৃশ্য দেখান",
+        "no_filtered_results_description": "আপনার অর্ডারগুলি দেখতে ফিল্টারগুলি সরান বা সামঞ্জস্য করুন",
+        "no_filtered_results_title": "কোন ফিল্টার করা ফলাফল",
+        "order_link": "অর্ডার দেখুন {{name}}",
+        "order_number": "অর্ডার {{name}}",
+        "orders_title": "নিশ্চিত করা হয়েছে",
+        "pagination": {
+          "nav_accessibility_label": "অর্ডার নেভিগেশন বোতাম",
+          "next": "পরবর্তী",
+          "next_accessibility_label": "পরবর্তী আদেশ",
+          "previous": "পূর্ববর্তী",
+          "previous_accessibility_label": "পূর্ববর্তী আদেশ",
+          "load_more": "আর ঢুকাও",
+          "load_more_accessibility_label": "আরো অর্ডার লোড"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "বিস্তারিত জানার জন্য অর্ডার দেখুন",
+            "estimated_delivery": "সম্ভাব্য প্রসব {{date}}",
+            "last_updated": "সর্বশেষ আপডেট করা হয়েছে {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "অনুমান। প্রসবের {{date}}"
+          }
+        },
+        "payment_status": {
+          "list_view": {
+            "overdue": "পরিশোধসময়াতীত পেমেন্ট",
+            "due": "পরিশোধযোগ্য {{date}}",
+            "due_today": "আজ পেমেন্ট বকেয়া",
+            "due_without_date": "বাকি টাকা",
+            "due_on_fulfillment": "পূরণের জন্য পেমেন্ট",
+            "pay_to_confirm": "নিশ্চিত করতে অর্থ প্রদান করুন",
+            "payment_not_due": "পেমেন্ট এখনও বকেয়া"
+          },
+          "table_view": {
+            "overdue": "ওভারডিউ",
+            "due": "নির্দিষ্ট {{date}}"
+          }
+        }
+      }
     },
     "order_details": {
       "shipment_timeline": {
@@ -875,6 +1093,34 @@
         "added_with_quantity": "{{quantity}} যোগ করা হয়েছে",
         "removed": "সরানো হয়েছে"
       }
+    },
+    "account_information": {
+      "loading_accessibility_message": "অ্যাকাউন্টের তথ্য লোড হচ্ছে",
+      "loading_finished_accessibility_message": "অ্যাকাউন্ট তথ্য লোড হয়েছে",
+      "profile_card": {
+        "cancel": "বাতিল করুন",
+        "cancel_accessibility_label": "প্রোফাইল সম্পাদনা বাতিল করুন",
+        "edit": "সম্পাদনা করুন",
+        "edit_accessibility_label": "জীবন বৃত্তান্ত সম্পাদনা",
+        "email_help_text": "লগইন করার জন্য ব্যবহৃত ইমেল পরিবর্তন করা যাবে না",
+        "first_name": "নামের প্রথম অংশ",
+        "last_name": "নামের শেষাংশ",
+        "no_name_provided_accessibility_label": "কোনো নাম যোগ করা হয়নি",
+        "phone_number_help_text": "লগইন করার জন্য ব্যবহৃত ফোন নম্বর পরিবর্তন করা যাবে না",
+        "save": "সংরক্ষণ",
+        "save_accessibility_label": "প্রোফাইল সংরক্ষণ",
+        "title": "প্রোফাইল"
+      },
+      "profile_update_confirmation_message": "প্রোফাইল আপডেট",
+      "title": "প্রোফাইল",
+      "people": {
+        "pagination": {
+          "load_more": "আর ঢুকাও",
+          "load_more_accessibility_label": "আরো মানুষ লোড",
+          "loading_accessibility_label": "মানুষ লোড হচ্ছে"
+        }
+      },
+      "add_button": "যোগ করুন"
     }
   },
   "customer": {
