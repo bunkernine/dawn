@@ -1624,6 +1624,127 @@
         }
       },
       "add_button": "যোগ করুন"
+    },
+    "payment_methods": {
+      "card_fields": {
+        "card_start_placeholder": "ইস্যু তারিখ (MM\/YY)",
+        "tooltip": {
+          "tooltip_accessibility_label": "অধিক তথ্য",
+          "card_verification_value_explanation_amex": "আপনার কার্ডের সামনে 4-সংখ্যার নিরাপত্তা কোড",
+          "card_verification_value_explanation_other": "আপনার কার্ডের পিছনে 3-সংখ্যার নিরাপত্তা কোড",
+          "card_verification_value_explanation": "3-সংখ্যার নিরাপত্তা কোড সাধারণত আপনার কার্ডের পিছনে পাওয়া যায়। আমেরিকান এক্সপ্রেস কার্ডের সামনে একটি 4-সংখ্যার কোড থাকে।",
+          "card_security_notice": "সমস্ত লেনদেন নিরাপদ এবং এনক্রিপ্ট করা হয়।"
+        },
+        "field_errors": {
+          "credit_card_name_invalid": "আপনার কার্ডে যেমন লেখা আছে ঠিক তেমনি আপনার নাম লিখুন",
+          "credit_card_number_invalid": "একটি বৈধ কার্ড নম্বর লিখুন",
+          "credit_card_expiry_invalid": "একটি বৈধ কার্ডের মেয়াদ শেষ হওয়ার তারিখ লিখুন",
+          "credit_card_verification_value_blank": "আপনার কার্ডে CVV বা নিরাপত্তা কোড লিখুন"
+        }
+      },
+      "payment_delete": {
+        "title": "অর্থপ্রদানের পদ্ধতি মুছুন",
+        "description_without_replacement": "এই অর্থপ্রদানের পদ্ধতি ভবিষ্যতে কেনাকাটার জন্য আর উপলব্ধ হবে না।",
+        "description_with_replacement": "এই অর্থপ্রদানের পদ্ধতিটি মুছে ফেলা হলে তা প্রাক-অনুমোদিত অর্থপ্রদানকে প্রভাবিত করবে। আসন্ন অর্ডারগুলি পাওয়া চালিয়ে যেতে আপনি ঐচ্ছিকভাবে এটিকে অন্য অর্থপ্রদানের পদ্ধতি দিয়ে প্রতিস্থাপন করতে পারেন।",
+        "warning_message_with_replacement": {
+          "with_pending_orders_and_subscriptions": "এই অর্থপ্রদানের পদ্ধতিটি মুছে ফেলা হলে তা প্রাক-অনুমোদিত অর্থপ্রদানকে প্রভাবিত করবে। আপনি একটি বিকল্প অর্থপ্রদানের পদ্ধতি নির্বাচন না করা পর্যন্ত, এই অর্থপ্রদানের পদ্ধতিটি এখনও বিদ্যমান অর্ডারগুলিতে কোনো বকেয়া ব্যালেন্সের জন্য চার্জ করা হবে। একটি বিকল্প অর্থপ্রদানের পদ্ধতি নির্বাচন করা আপনাকে কোনো বাধা ছাড়াই আসন্ন সাবস্ক্রিপশন অর্ডার পেতে অনুমতি দেবে।",
+          "with_pending_orders": "এই অর্থপ্রদানের পদ্ধতিটি মুছে দিলে এটি আপনার অ্যাকাউন্ট থেকে মুছে যাবে এবং ভবিষ্যতে কেনাকাটার জন্য আর উপলব্ধ থাকবে না। আপনি একটি বিকল্প অর্থপ্রদানের পদ্ধতি নির্বাচন না করা পর্যন্ত, বিদ্যমান অর্ডারগুলিতে কোনো বকেয়া ব্যালেন্সের জন্য এটি এখনও চার্জ করা হবে।",
+          "with_subscriptions": "এই অর্থপ্রদানের পদ্ধতিটি মুছে ফেলা হলে তা প্রাক-অনুমোদিত অর্থপ্রদানকে প্রভাবিত করবে। আসন্ন অর্ডারগুলি পাওয়া চালিয়ে যেতে এটিকে একটি বিকল্প অর্থপ্রদানের পদ্ধতি দিয়ে প্রতিস্থাপন করুন।"
+        },
+        "warning_message_without_replacement": {
+          "with_pending_orders_and_subscriptions": "এই অর্থপ্রদানের পদ্ধতিটি মুছে ফেলা হলে তা প্রাক-অনুমোদিত অর্থপ্রদানকে প্রভাবিত করবে। এই অর্থপ্রদানের পদ্ধতিটি এখনও বিদ্যমান অর্ডারগুলিতে কোনও বকেয়া ব্যালেন্সের জন্য চার্জ করা হবে, তবে আপনি আসন্ন সদস্যতা অর্ডারগুলি পাবেন না। সাবস্ক্রিপশন অর্ডার গ্রহণ চালিয়ে যেতে একটি বিকল্প অর্থপ্রদানের পদ্ধতি যোগ করুন।",
+          "with_pending_orders": "এই অর্থপ্রদানের পদ্ধতিটি মুছে দিলে এটি আপনার অ্যাকাউন্ট থেকে মুছে যাবে এবং ভবিষ্যতে কেনাকাটার জন্য আর উপলব্ধ থাকবে না। এটি এখনও বিদ্যমান অর্ডারে কোনো বকেয়া ব্যালেন্সের জন্য চার্জ করা হবে।",
+          "with_subscriptions": "এই অর্থপ্রদানের পদ্ধতিটি মুছে ফেলা হলে তা প্রাক-অনুমোদিত অর্থপ্রদানকে প্রভাবিত করবে। আসন্ন অর্ডার গ্রহণ চালিয়ে যেতে একটি বিকল্প অর্থপ্রদানের পদ্ধতি যোগ করুন।"
+        },
+        "payment_method_selector_placeholder": "একটি প্রতিস্থাপন পেমেন্ট পদ্ধতি নির্বাচন করুন (ঐচ্ছিক)",
+        "payment_method_selector_no_alternative_payment": "প্রতিস্থাপন পদ্ধতি নেই",
+        "replace_method_with_new_method_description": "আপনার {{currentPaymentMethodName}} মুছে ফেলা হবে এবং আপনার {{newPaymentMethodName}} দিয়ে প্রতিস্থাপিত হবে।",
+        "error_when_deleting": "আমরা ক্ষমাপ্রার্থী কিন্তু কিছু ভুল হয়েছে এবং আমরা এই অর্থপ্রদানের পদ্ধতিটি মুছতে পারিনি৷ অনুগ্রহ করে পরে আবার চেষ্টা করুন বা পৃষ্ঠা রিফ্রেশ করুন।",
+        "delete_and_replace_button": "মুছুন এবং প্রতিস্থাপন করুন",
+        "delete_and_replace_button_accessibility_label": "{{currentPaymentMethodName}} মুছুন এবং {{newPaymentMethodName}} দিয়ে প্রতিস্থাপন করুন।",
+        "deleted_successfully": "পেমেন্ট পদ্ধতি সফলভাবে মুছে ফেলা হয়েছে।",
+        "loading_available_payment_methods_accessibility_label": "উপলব্ধ অর্থপ্রদানের পদ্ধতি লোড হচ্ছে"
+      },
+      "add_payment_method": {
+        "title": "অর্থপ্রদানের পদ্ধতি যোগ করুন",
+        "payment_method_added_confirmation": "পেমেন্ট পদ্ধতি যোগ করা হয়েছে",
+        "billing_address": {
+          "title": "বিলিং ঠিকানা",
+          "add_billing_address_button": "নতুন যোগ করুন",
+          "add_billing_address_button_accessibility_label": "নতুন বিলিং ঠিকানা যোগ করুন",
+          "choose_billing_address_from_list_button": "তালিকা থেকে চয়ন করুন",
+          "choose_billing_address_from_list_button_accessibility_label": "তালিকা থেকে একটি বিলিং ঠিকানা চয়ন করুন",
+          "missing_billing_address_error_message": "একটি বিলিং ঠিকানা উল্লেখ করুন",
+          "default_checkbox": "ডিফল্ট অর্থপ্রদানের পদ্ধতি হিসাবে সেট করুন"
+        }
+      }
+    },
+    "payment_method_brands": {
+      "visa": "ভিসা",
+      "mastercard": "মাস্টারকার্ড",
+      "americanexpress": "আমেরিকান এক্সপ্রেস",
+      "discover": "আবিষ্কার করুন",
+      "dinersclub": "ডিনার 'স ক্লাব",
+      "jcb": "জেসিবি",
+      "elo": "এলো",
+      "visaelectron": "ভিসা ইলেক্ট্রন",
+      "maestro": "উস্তাদ",
+      "dankort": "ডানকোর্ট",
+      "hipercard": "হাইপারকার্ড",
+      "unionpay": "ইউনিয়নপে",
+      "laser": "লেজার",
+      "shoppay": "দোকান পে",
+      "applepay": "অ্যাপল পে",
+      "paypal": "পেপ্যাল"
+    },
+    "shop_policies": {
+      "legal_notice": "আইনি নোটিশ",
+      "privacy_policy": "গোপনীয়তা নীতি",
+      "refund_policy": "প্রত্যর্পণ নীতি",
+      "shipping_policy": "চালান নীতি",
+      "subscription_policy": "সদস্যতা নীতি",
+      "terms_of_sale": "বিক্রয় শর্তাবলী",
+      "terms_of_service": "সেবা পাবার শর্ত"
+    },
+    "ui_components": {
+      "closeNotification": "বন্ধ",
+      "expandNotification": "আরো দেখুন",
+      "closeModal": "বন্ধ",
+      "submit": "জমা দিন",
+      "processing": "প্রক্রিয়া করা হচ্ছে...",
+      "increase": "{{type}} বাড়ান",
+      "decrease": "{{type}} কমান",
+      "minimumReached": "ন্যূনতম {{value}} এ পৌঁছেছে৷",
+      "maximumReached": "সর্বাধিক {{value}} এ পৌঁছেছে৷",
+      "january": "জানুয়ারি",
+      "february": "ফেব্রুয়ারি",
+      "march": "মার্চ",
+      "april": "এপ্রিল",
+      "may": "মে",
+      "june": "জুন",
+      "july": "জুলাই",
+      "august": "আগস্ট",
+      "september": "সেপ্টেম্বর",
+      "october": "অক্টোবর",
+      "november": "নভেম্বর",
+      "december": "ডিসেম্বর",
+      "monday": "সোমবার",
+      "tuesday": "মঙ্গলবার",
+      "wednesday": "বুধবার",
+      "thursday": "বৃহস্পতিবার",
+      "friday": "শুক্রবার",
+      "saturday": "শনিবার",
+      "sunday": "রবিবার",
+      "mondayAbbreviation": "মো",
+      "tuesdayAbbreviation": "তু",
+      "wednesdayAbbreviation": "আমরা",
+      "thursdayAbbreviation": "ম",
+      "saturdayAbbreviation": "সা",
+      "sundayAbbreviation": "সু",
+      "showNextMonth": "পরের মাসে দেখান, {{month}} {{year}}",
+      "showPreviousMonth": "আগের মাস দেখান, {{month}} {{year}}",
+      "rangeStart": "পরিসীমা শুরু",
+      "inRange": "সীমার মধ্যে"
     }
   },
   "customer": {
