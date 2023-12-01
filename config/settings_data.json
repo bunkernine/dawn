@@ -137,6 +137,12 @@
           "customJs": "",
           "customCss": ""
         }
+      },
+      "17327048248777170309": {
+        "type": "shopify:\/\/apps\/all-in-1-discount-on-cart\/blocks\/instant-load\/f428e1ae-8a34-4767-8189-f8339f3ab12b",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
