@@ -109,7 +109,10 @@
 
 <p>Checkout charge amount : {{ cart.checkout_charge_amount | money_without_trailing_zeros }}</p>
 
-
+{% for discount_application in cart.discount_applications  %}
+  <p>Discount name: {{ discount_application.title }}</p>
+  <p>Savings: -{{ discount_application.total_allocated_amount |  money_without_trailing_zeros }}</p>
+{% endfor %}
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -175,7 +178,3 @@
   ]
 }
 {% endschema %}
-
-<script id="docapp-discount-speedup">
-(() => { if (!document.documentElement.innerHTML.includes('\\/shop' + '\\/js' + '\\/discount-on-cart-pro.min.js') || window.discountOnCartProAppLoaded) return; let script = document.createElement('script'); script.src = "https://d9fvwtvqz2fm1.cloudfront.net/shop/js/discount-on-cart-pro.min.js?shop=b9-dev-store.myshopify.com"; document.getElementById('docapp-discount-speedup').after(script); })();
-</script>
