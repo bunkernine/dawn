@@ -109,10 +109,7 @@
 
 <p>Checkout charge amount : {{ cart.checkout_charge_amount | money_without_trailing_zeros }}</p>
 
-{% for discount_application in cart.discount_applications  %}
-  <p>Discount name: {{ discount_application.title }}</p>
-  <p>Savings: -{{ discount_application.total_allocated_amount |  money_without_trailing_zeros }}</p>
-{% endfor %}
+
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
