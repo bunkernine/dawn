@@ -1,0 +1,15 @@
+{
+  "parent": "index.json",
+  "context": {
+    "market": "international"
+  },
+  "sections": {
+    "multicolumn": {
+      "disabled": false,
+      "settings": {
+      },
+      "blocks": {
+      }
+    }
+  }
+}
