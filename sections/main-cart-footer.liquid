@@ -107,7 +107,7 @@
   </div>
 </div>
 
-<p>Checkout charge amount : {{ cart.checkout_charge_amount | | money_without_trailing_zeros }}</p>
+<p>Checkout charge amount : {{ cart.checkout_charge_amount | money_without_trailing_zeros }}</p>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
