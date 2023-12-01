@@ -116,6 +116,8 @@
 
 <p>Total {{ cart.item_count }}</p>
 
+<p>Total discount: {{ cart.total_discount |  money_without_trailing_zeros  }}</p>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     function isIE() {
