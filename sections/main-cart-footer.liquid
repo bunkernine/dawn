@@ -114,6 +114,8 @@
   <p>Savings: -{{ discount_application.total_allocated_amount |  money_without_trailing_zeros }}</p>
 {% endfor %}
 
+<p>Total {{ cart.item_count }}</p>
+
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     function isIE() {
